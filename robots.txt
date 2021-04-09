@@ -1,0 +1,7 @@
+﻿# Group 1
+User-agent: *
+Disallow: /404.html
+Disallow: /img/background.png
+
+Sitemap: https://www.vladimir-markiev.name/sitemap.xml
+ 
