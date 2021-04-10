@@ -3,5 +3,5 @@ User-agent: *
 Disallow: /404.html
 Disallow: /img/background.png
 
-Sitemap: https://www.vladimir-markiev.name/sitemap.xml
+Sitemap: https:/vladimir-markiev.name/sitemap.xml
  
