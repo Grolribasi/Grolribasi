@@ -4,11 +4,18 @@
 <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html">
-    <title>Портфолио, дипломы, сертификаты - Владимир Маркиев</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Портфолио. Владимир Маркиев</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style_main.css">
+    <link rel="stylesheet" href="style_nav.css">
+    <link rel="stylesheet" href="style_cases.css">
+    <link rel="stylesheet" href="style_footer.css">
+    <!-- Stylesheets -->
+    
     <meta name="robots" content="follow, index" />
-    <meta name="description" content="Владимир Маркиев, Vladimir Markiev: Технический писатель в Санкт-Петербурге. Портфолио, примеры работ и сертификаты." />
-    <meta property="og:title" content="Портфолио - Владимир Маркиев" />
+    <meta name="description" content="Портфолио Владимира Маркиева, технического писателя из Санкт-Петербурга. Technical writer Vladimir Markiev: projects and portfolio." />
+    <meta property="og:title" content="Портфолио Владимира Маркиева, технического писателя из Санкт-Петербурга." />
     <meta property="og:type" content="profile" />
     <meta property="profile:first_name" content="Владимир" />
     <meta property="profile:last_name" content="Маркиев" />
@@ -16,95 +23,65 @@
     <meta property="og:url" content="https://vladimir-markiev.name" />
     <link rel="canonical" content="https://vladimir-markiev.name" />
     <meta property="og:image" content="https://vladimir-markiev.name/img/profile.jpg">
-    <meta property="og:description" content="Владимир Маркиев: Технический писатель в Санкт-Петербурге. Портфолио, примеры работ и сертификаты." />
+    <meta property="og:description" content="Портфолио Владимира Маркиева, технического писателя из Санкт-Петербурга." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Markiev Vladimir">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/favicon/favicon.ico">
+   
+   <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <!-- Favicons -->
+
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function(m, e, t, r, i, k, a) {
-            m[i] = m[i] || function() {
-                (m[i].a = m[i].a || []).push(arguments)
-            };
-            m[i].l = 1 * new Date();
-            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-        })
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-        ym(62734534, "init", {
-            clickmap: true,
-            trackLinks: true,
-            accurateTrackBounce: true,
-            webvisor: true
-        });
-
+    <script type="text/javascript" src="js_metrika.js">
     </script>
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/62734534" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
+
+    <script type="text/javascript" src="js_nav.js">
+    </script>
 </head>
 <a name="top"></a>
 
 <body>
-    <div class="sidenav">
-        <a tabindex="1" href="index.html">Главная</a>
-        <a tabindex="2" href="about.html">Обо мне</a>
-        <a tabindex="3" href="education.html">Образование</a>
-        <a tabindex="4" href="experience.html">Резюме</a>
-        <a tabindex="5" href="searchingfor.html">Желаемая должность</a>
-        <a tabindex="6" class="current" href="#top">Портфолио</a>
-    </div>
-    <div class="topnav">
-        <a href="#top" class="navbar">Выпадающее меню ---></a>
-        <div id="myLinks">
+    <!-- МЕНЮ -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0);" class="closebtn" onclick="closeNav()">X</a>
+       
             <a tabindex="1" href="index.html">Главная</a>
             <a tabindex="2" href="about.html">Обо мне</a>
             <a tabindex="3" href="education.html">Образование</a>
             <a tabindex="4" href="experience.html">Резюме</a>
-            <a tabindex="5" href="searchingfor.html">Желаемая должность</a>
+            <a tabindex="5" href="skills.html">Желаемая должность</a>
             <a tabindex="6" class="current" href="#top">Портфолио</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <svg width=".9em" height=".9em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z" clip-rule="evenodd" />
-            </svg>
-        </a>
     </div>
-
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-
-    </script>
 
     <div class="main">
         <div class="header">
             <nav>
                 <ul class="breadcrumb">
+                <!-- КНОПКА МЕНЮ -->
+                    <li>
+        <button class="openbtn" onclick="openNav()">Открыть меню</button>
+                    </li>
+                <!-- КОНЕЦ МЕНЮ -->
                     <li><a tabindex="7" href="index.html">Главная</a></li>
                     <li>Портфолио</li>
                 </ul>
             </nav>
-
-            <h1 class="h1">Портфолио работ и сертификаты</h1>
         </div>
-        <div class="content">
-            <h2 class="headline">Примеры моих работ</h2>
+        <div class="content first"><h1 class="h1">Портфолио работ и сертификаты</h1></div>
+        <div class="content cases second">
+            <h2 class="h2">Примеры моих работ</h2>
             <div class="pp-case case-padding"><embed src="img/Privacy_policy.pdf" width="100%" alt="Политика конфиденциальности" id="pp" /><a href="img/Privacy_policy.pdf" width="100%" class="hidden" target="_blank">Политика конфиденциальности браузера.pdf</a>
                 <p class="casedescription">Случай, когда я писал политику конфиденциальности для одного браузера. Написание таких текстов для меня было новым опытом. Я проанализировал аналогичные документы, правила написания политики конфиденциальности, изучил тон, сумел подвести политику конфиденциальности под данный браузер. Опыт интересный, я всегда готов взяться за похожие документы, например, EULA, Terms and Conditions.</p>
             </div>
@@ -133,7 +110,7 @@
         </div>
         <h1 class="h1">Почётные достижения</h1>
         <div class="content">
-            <h2 class="headline">Мои сертификаты и грамоты</h2>
+            <h2 class="h2">Мои сертификаты и грамоты</h2>
             <p>У меня есть несколько дипломов, их можно открыть по ссылкам ниже (откроются в новой вкладке):</p>
             <a href="img/bachelor.pdf" width="100%" class="cert" target="_blank">Диплом бакалавра;</a>
             <a href="img/master.pdf" width="100%" class="cert" target="_blank">Диплом магистра;</a>

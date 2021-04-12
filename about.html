@@ -4,11 +4,18 @@
 <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html">
-    <title>Обо мне - Владимир Маркиев</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Владимир Маркиев в соцсетях</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style_main.css">
+    <link rel="stylesheet" href="style_nav.css">
+    <link rel="stylesheet" href="style_about.css">
+    <link rel="stylesheet" href="style_footer.css">
+    <!-- Stylesheets -->
+
     <meta name="robots" content="follow, index" />
-    <meta name="description" content="Владимир Маркиев, Vladimir Markiev: Технический писатель в Санкт-Петербурге. Проекты и страницы в соцсетях." />
-    <meta property="og:title" content="Обо мне - Владимир Маркиев" />
+    <meta name="description" content="Проекты и страницы в сосцестях Владимира Маркиева, технического писателя из Санкт-Петербурга. Technical writer Vladimir Markiev projects and social networks." />
+    <meta property="og:title" content="Проекты и страницы в сосцестях Владимира Маркиева, технического писателя из Санкт-Петербурга." />
     <meta property="og:type" content="profile" />
     <meta property="profile:first_name" content="Владимир" />
     <meta property="profile:last_name" content="Маркиев" />
@@ -16,104 +23,75 @@
     <meta property="og:url" content="https://vladimir-markiev.name/" />
     <link rel="canonical" content="https://vladimir-markiev.name/" />
     <meta property="og:image" content="https://vladimir-markiev.name/img/profile.jpg">
-    <meta property="og:description" content="Владимир Маркиев: Технический писатель в Санкт-Петербурге. Проекты и страницы в соцсетях." />
+    <meta property="og:description" content="Проекты и страницы в сосцестях Владимира Маркиева, технического писателя из Санкт-Петербурга." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Markiev Vladimir">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <!-- Favicons -->
+
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function(m, e, t, r, i, k, a) {
-            m[i] = m[i] || function() {
-                (m[i].a = m[i].a || []).push(arguments)
-            };
-            m[i].l = 1 * new Date();
-            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-        })
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-        ym(62734534, "init", {
-            clickmap: true,
-            trackLinks: true,
-            accurateTrackBounce: true,
-            webvisor: true
-        });
-
+    <script type="text/javascript" src="js_metrika.js">
     </script>
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/62734534" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
+
+    <script type="text/javascript" src="js_nav.js">
+    </script>
+
 </head>
 <a name="top"></a>
 
 <body>
-    <div class="sidenav">
+    <!-- МЕНЮ -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0);" class="closebtn" onclick="closeNav()">X</a>
         <a tabindex="1" href="index.html">Главная</a>
         <a tabindex="2" class="current" href="#top">Обо мне</a>
         <a tabindex="3" href="education.html">Образование</a>
         <a tabindex="4" href="experience.html">Резюме</a>
-        <a tabindex="5" href="searchingfor.html">Желаемая должность</a>
+        <a tabindex="5" href="skills.html">Желаемая должность</a>
         <a tabindex="6" href="cases.html">Портфолио</a>
     </div>
-    <div class="topnav">
-        <a href="#top" class="navbar">Выпадающее меню ---></a>
-        <div id="myLinks">
-            <a tabindex="1" href="index.html">Главная</a>
-            <a tabindex="2" class="current" href="#top">Обо мне</a>
-            <a tabindex="3" href="education.html">Образование</a>
-            <a tabindex="4" href="experience.html">Резюме</a>
-            <a tabindex="5" href="searchingfor.html">Желаемая должность</a>
-            <a tabindex="6" href="cases.html">Портфолио</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <svg class="bi bi-list" width=".9em" height=".9em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z" clip-rule="evenodd" />
-            </svg>
-        </a>
-    </div>
-
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-
-    </script>
 
     <div class="main">
         <div class="header">
             <nav>
                 <ul class="breadcrumb">
+                <!-- КНОПКА МЕНЮ -->
+                    <li>
+        <button class="openbtn" onclick="openNav()">Открыть меню</button>
+                    </li>
+                <!-- КОНЕЦ МЕНЮ -->
                     <li><a tabindex="7" href="index.html">Главная</a></li>
                     <li>Обо мне</li>
                 </ul>
             </nav>
-
-            <h1 class="h1">Владимир Маркиев — человек или сотрудник</h1>
         </div>
+    
         <div class="content">
-            <h2 class="headline">Откуда такой классный</h2>
+            <h1 class="h1">Владимир Маркиев — человек или сотрудник</h1>
+            <h2 class="h2">Откуда такой классный</h2>
             <p>Сложно рассказать о себе что-то новое, когда каждая страница сайта и так сочится самомнением. Но попытаться стоит. Хочу рассказать про себя как человека, а не как сотрудника, вдруг кому-то будет интересно. Как человек иногда я могу быть грустным, иногда весёлым, в любое время я не очень общительный. Но не принимайте это на свой счёт, пожалуйста. Социальной неловкости во мне гораздо больше, иногда я не говорю что-то, потому что боюсь сказать не то. Для меня бывает сложно общаться с человеком, если только не считаю его близким другом или родным человеком. Сложно завести новых знакомых, постоянно испытывая неловкость. Приходиться стараться быть более открытым, но порой это утомляет. В общем, почти как у всех, разве что кроме самых общительных экстравертов. Обычно я стараюсь не задавать много вопросов, а делать логические выводы или искать информацию в интернете. Из-за этого я могу показаться неприветливым, но только показаться, на самом деле это не так, мне просто нравится мыслить логически. Если я мало говорю, это же не значит, что я не умею разговаривать. Всего лишь не люблю разговаривать много.</p>
             <p>Я всегда стремлюсь делать то, что я делаю, качественно. Всегда завершаю начатое в срок, стараюсь проявить себя в работе, я не буду кричать, прыгать, чтобы меня заметили. Я предпочитаю, чтобы поводом меня заметить была моя работа, а не видимая активность. Очень люблю сложные, но выполнимые задачи, особенно, если требуется применить смекалку, выйти из зоны комфорта.</p>
             <p>Идеальных людей не существует, как и идеальных сотрудников с самого первого дня. Я тоже не идеален, могу пропустить маленькую деталь, могу делать ошибки, особенно в самом начале работы. Хотите - зовите это недостатком, но вряд ли это недостаток, каждый из нас - человек. Я не могу быть тем самым идеальным сотрудником, которого возьмут в любую компанию с руками и ногами, но я могу им стать. Чего я не люблю. так это стрессы. Любая стрессовая ситуация не подстёгивает, а только напрягает меня, как и стрессовая обстановка. Стараюсь избегать таких ситуаций, решать впоросы вовремя, стараюсь успокоиться, когда что-то нужно срочно, учитываю все обстоятельства. Критику и замечания всегда вопринимаю как должное, очень не люблю, когда молчат. Всегда лучше решить разногласия, чем пытаться намекнуть или надеяться, что всё само решится.</p>
             <p>А ведь похвала тоже важна. Всегда важно соблюдать баланс. Я люблю, когда всё в балансе. Избыточная критика только мешает, а лесть настораживает. Взять к примеру этот сайт, опытный веб-разработчик сможет сделать сайт гораздо лучше, сложнее, красивее, я не стану спорить, я редко спорю, но какой смысл критиковать меня за то, что я не сделал сайт лучше, сложнее, красивее, как сделал бы веб-разработчик, вместо этого я лучше похвалю себя за то, что я вообще сделал сайт.</p>
         </div>
 
-        <h1 class="h1">Владимир Маркиев в социальных сетях</h1>
-        <div class="content">
-            <h2 class="headline">Социальные и связанные профили</h2>
+        <div class="content first"><h1 class="h1">Владимир Маркиев в социальных сетях</h1></div>
+        <div class="content second">
+            <h2 class="h2">Социальные и связанные профили</h2>
             <fieldset class="fs01">
                 <legend><a href="https://vk.com/cookiespunk" class="soc vk" target="_blank">Владимир Петров</a>|<a href="https://vk.com/theptsd" class="soc vk2" target="_blank">ThePTSD</a>|<a href="https://vk.com/behindmousing" class="soc vk3" target="_blank">Замышление</a></legend>
                 <p class="soc">Владимир Петров - моя личная страница ВК. Почему Петров? Моя настоящая фамилия - Маркиев, но с ВК так повелось с давних пор и, в принципе, это не мешает даже поисковикам сложить два и два и понять, кому принадлежит эта страница.</p>
@@ -159,7 +137,7 @@
             </fieldset>
             <br>
             <fieldset class="fs01">
-                <legend><a onmousedown="event.preventDefault ? event.preventDefault() : event.returnValue = false" href="mailto:vladimir24.08.92@gmail.com?subject=Сообщение с сайта&body=Маркиев Владмир, здравствуйте," class="soc em no-sel" target="_blank">vladimir24.08.92@gmail.com</a>|<a onmousedown="event.preventDefault ? event.preventDefault() : event.returnValue = false" href="mailto:grolribasi@gmail.com?subject=Сообщение с сайта&body=Маркиев Владмир, здравствуйте," class="soc no-sel" target="_blank">grolribasi@gmail.com</a>|<a onmousedown="event.preventDefault ? event.preventDefault() : event.returnValue = false" href="mailto:vladimir-markiev@gmail.com?subject=Сообщение с сайта&body=Маркиев Владмир, здравствуйте," class="soc no-sel" target="_blank">vladimir-markiev@gmail.com</a></legend>
+                <legend><a class="soc em" onmousedown="event.preventDefault ? event.preventDefault() : event.returnValue = false" href="mailto:vladimir-markiev@gmail.com?subject=Сообщение с сайта&body=Маркиев Владмир, здравствуйте," class="soc no-sel" target="_blank">vladimir-markiev@gmail.com</a></legend>
                 <p class="soc">Да, у меня есть три адреса электронной почты. Нет, вы не можете их скопировать из соображений безопасности (эта мера помогает мне избежать спам-писем). Вы можете писать на любой из трёх, я обязательно отвечу настолько быстро, насколько смогу.</p>
             </fieldset>
             <br>

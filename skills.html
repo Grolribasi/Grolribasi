@@ -4,11 +4,19 @@
 <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html">
-    <title>Желаемая должность - Владимир Маркиев</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Технические навыки. Владимир Маркиев</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style_main.css">
+    <link rel="stylesheet" href="style_nav.css">
+    <link rel="stylesheet" href="style_accordion.css">
+    <link rel="stylesheet" href="style_search-stub.css">
+    <link rel="stylesheet" href="style_footer.css">
+    <!-- Stylesheets -->
+
     <meta name="robots" content="follow, index" />
-    <meta name="description" content="Владимир Маркиев, Vladimir Markiev: Технический писатель в Санкт-Петербурге. В поиске работы и навыки." />
-    <meta property="og:title" content="Желаемая должность  - Владимир Маркиев" />
+    <meta name="description" content="Навыки Владимира Маркиева, технического писателя из Санкт-Петербурга. Technical writer Vladimir Markiev skills." />
+    <meta property="og:title" content="Навыки технического писателя Владимира Маркиева" />
     <meta property="og:type" content="profile" />
     <meta property="profile:first_name" content="Владимир" />
     <meta property="profile:last_name" content="Маркиев" />
@@ -16,101 +24,72 @@
     <meta property="og:url" content="https://vladimir-markiev.name/" />
     <link rel="canonical" content="https://vladimir-markiev.name/" />
     <meta property="og:image" content="https://vladimir-markiev.name/img/profile.jpg">
-    <meta property="og:description" content="Владимир Маркиев: Технический писатель в Санкт-Петербурге. В поиске работы и навыки." />
+    <meta property="og:description" content="Навыки Владимира Маркиева, технического писателя из Санкт-Петербурга." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Markiev Vladimir">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function(m, e, t, r, i, k, a) {
-            m[i] = m[i] || function() {
-                (m[i].a = m[i].a || []).push(arguments)
-            };
-            m[i].l = 1 * new Date();
-            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-        })
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-        ym(62734534, "init", {
-            clickmap: true,
-            trackLinks: true,
-            accurateTrackBounce: true,
-            webvisor: true
-        });
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Favicons -->
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" src="js_metrika.js">
     </script>
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/62734534" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
+
+    <script type="text/javascript" src="js_nav.js">
+    </script>
+
 </head>
 <a name="top"></a>
 
 <body>
-    <div class="sidenav">
+  <!-- МЕНЮ -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0);" class="closebtn" onclick="closeNav()">X</a>
         <a tabindex="1" href="index.html">Главная</a>
-        <a tabindex="2" href="about.html">Обо мне</a>
+        <a tabindex="2" href="about">Обо мне</a>
         <a tabindex="3" href="education.html">Образование</a>
         <a tabindex="4" href="experience.html">Резюме</a>
         <a tabindex="5" class="current" href="#top">Желаемая должность</a>
         <a tabindex="6" href="cases.html">Портфолио</a>
     </div>
-    <div class="topnav">
-        <a href="#top" class="navbar">Выпадающее меню ---></a>
-        <div id="myLinks">
-            <a tabindex="1" href="index.html">Главная</a>
-            <a tabindex="2" href="about.html">Обо мне</a>
-            <a tabindex="3" href="education.html">Образование</a>
-            <a tabindex="4" href="experience.html">Резюме</a>
-            <a tabindex="5" class="current" href="#top">Желаемая должность</a>
-            <a tabindex="6" href="cases.html">Портфолио</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <svg class="bi bi-list" width=".9em" height=".9em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z" clip-rule="evenodd" />
-            </svg>
-        </a>
-    </div>
-
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-    </script>
 
     <div class="main">
         <div class="header">
             <nav>
                 <ul class="breadcrumb">
+                <!-- КНОПКА МЕНЮ -->
+                    <li>
+        <button class="openbtn" onclick="openNav()">Открыть меню</button>
+                    </li>
+                <!-- КОНЕЦ МЕНЮ -->
                     <li><a tabindex="7" href="index.html">Главная</a></li>
-                    <li>Резюме</li>
+                    <li>Обо мне</li>
                 </ul>
             </nav>
-
-            <h1 class="h1">Ищу работу</h1>
         </div>
+
+    
         <div class="content">
-            <h2 class="headline">Мои навыки, умения, способности</h2>
-            <p class="subheadline">Штатная должность. Полный рабочий день.</p>
-            <p>Сейчас я не ищу работу,но не удалять же сайт, правильно? Поэтому на этой странице просто перечислены мои навыки.
-                <br>
-                Меня тоже интересует, почему футер совсем ни прилеплен к низу страницы. Но разбираться с этим сейчас нет времени. Пока пусть будет как есть.
+            <h1 class="h1">Навыки</h1>
+            <h2 class="h2">Мои навыки, умения, способности</h2>
+            <p class="subheadline">Штатная должность. Полный рабочий день.
             </p>
-            <!-- <p style="font-size:3em">Поздравляю! Вы открыли скрытый текст! Мне не хотелось переписывать всю страницу с нуля, потому и скрыл. К тому же там есть интересные тэги, которые я не хочу забыть. В общем, скрыт этот текст не просто так.</p> -->
-            <!-- <p>К счастью, я умею не только переводить, поэтому я рассматриваю вакансии в смежных областях. Особенно меня привлекают сфера IT и должность технического писателя. Я умею многое, но многому мне ещё предстоит научиться. Для меня важно иметь возможность развития, использовать английский язык и находиться в приятной рабочей атмосфере. Я с удовольствием готов работать, например, техническим писателем, потому что мне нравится описывать продукты, разбираться в деталях, узнавать старое по-новому и новое по-старому. В принципе, это похоже и на техническую поддержку.</p>
-            <p>Я всегда стараюсь запоминать что-то новое, что я узнал самостоятельно, потому что было интересно, или в работе, потому что было нужно для решения задачи. Я умею анализировать, раскладывать на составляющие, синтезировать, собирая знание воедино по крупицам. Даже этот сайт создан не исключительно на собственных знаниях, многое я искал в интернете, изучал элементы и менял их под свой вкус.</p> -->
+           
+           <p>К счастью, я умею не только переводить, поэтому я рассматриваю вакансии в смежных областях. Особенно меня привлекают сфера IT и должность технического писателя. Я умею многое, но многому мне ещё предстоит научиться. Для меня важно иметь возможность развития, использовать английский язык и находиться в приятной рабочей атмосфере. Я с удовольствием готов работать, например, техническим писателем, потому что мне нравится описывать продукты, разбираться в деталях, узнавать старое по-новому и новое по-старому. В принципе, это похоже и на техническую поддержку.</p>
+            <p>Я всегда стараюсь запоминать что-то новое, что я узнал самостоятельно, потому что было интересно, или в работе, потому что было нужно для решения задачи. Я умею анализировать, раскладывать на составляющие, синтезировать, собирая знание воедино по крупицам. Даже этот сайт создан не исключительно на собственных знаниях, многое я искал в интернете, изучал элементы и менял их под свой вкус.</p> 
             <br>
             <button class="accordion">Среди моих навыков:</button>
             <div class="panel">
@@ -139,64 +118,15 @@
                     <li>Увлекаюсь автомобилями, играми, языками, музыкой, фотографией.</li>
                 </ul>
             </div>
-            <!-- <button class="accordion">Зарплатные ожидания</button>
+          <button class="accordion">Зарплатные ожидания</button>
             <div class="panel">
                 <p>Я готов рассмотреть любые предложения с конкурентным уровнем оплаты, соответствующим моему уровню навыков. Согласен на чуть меньшую зарплату, если работодатель гарантирует индексацию и/или возможность роста. Точное определение <i>конкурентного</i> уровня зарплаты предпочту оставить за работодателем и обсудить на собеседовании.</p>
             </div>
-        </div> -->
+        </div> 
 
-            <!-- <div class="content">
-            <p class="headline">Рассматриваемые должности</p>
-            <p class="subheadline">В порядке предпочтения:</p>
+        <script type="text/javascript" src="js_acc.js">
+        </script>
 
-            <div class="newjobflex">
-                <div class="newjob title head">Должность</div>
-                <div class="newjob explain head">Почему рассматриваю</div>
-            </div>
-
-            <div class="newjobflex">
-                <div class="newjob title">
-                    <h3>начинающий технический писатель.</h3>
-                    <br><a href="experience.html" class="joblinks local">Страница "Резюме".</a><br>
-                    <br><a href="https://spb.hh.ru/resume/922b9057ff0795f7970039ed1f4e6b7a616c61" target="_blank" class="joblinks hh">Резюме на hh.ru.</a>
-                </div>
-                <div class="newjob explain">Я долгое время работал переводчиком. Понимаю, что с моим опытом трудно быть техписом. Наверное, это просто моя мечта. Однако мне часто приходилось сталкиваться с переводом технических текстов. Мне всегда нравилось разбираться в программных продуктах, технических деталях, подробностях работы всего, до чего дотянусь, поэтому технические тексты меня увлекли и я обрёл большой опыт работы с ними. <br><i> - Но перевод - не то же самое, что самостоятельное написание! <br> - Знаю.</i><br>Я люблю читать тексты, люблю разбираться в ПО, изучать документацию. Соответственно, писать в том же стиле я могу, мне не хватает только специализированного знания, инструкции о том, что именно требуется от меня. Остальное я смогу понять сам или поискать в интернете. Я бы очень хотел писать какие-нибудь руководства, документировать API. Иметь возможность Общаясь с профессионалами своей области, создавать что-то по-настоящему нужное. Мне бы хотелось устроиться на должность, которая позволит не просто делать одно и то же каждый день, а заниматься действительно интересным делом и знать, что это нужно, что я делаю работу не просто, чтобы чем-то занять день.</div>
-            </div>
-            <div class="newjobflex">
-                <div class="newjob title">
-                    <h3>Специалист технической поддержки</h3>
-                    <br><a href="experience.html" class="joblinks local">Страница "Резюме".</a><br>
-                    <br><a href="https://spb.hh.ru/resume/05dbaea9ff0795f9830039ed1f36757a613074" target="_blank" class="joblinks hh">Резюме на hh.ru</a>
-                </div>
-                <div class="newjob explain">Я готов работать и на должности специалиста технической поддержки. В первую очередь это потому, что я хорошо разбираюсь в технических деталях и мне интересно углубиться в этом направлении. Наверно, это более реалистичная должность в моём случае, на начальный уровень техподдержки меня будет достаточно. Я имею представление о работе с тикетами, могу решить многие стандартные проблемы, возникающие у пользователей, знаком с удалённым доступом и виртуальными машинами. Я уверен, что справлюсь с работой при наличии чётких инструкций и вводного обучения. Однако, до сих пор я получал предложения на должности специалиста технической поддержки со сменным или ночным графиком. К сожалению, такой график я рассматривать не готов.</div>
-            </div>
-            <div class="newjobflex">
-                <div class="newjob title">
-                    <h3>Менеджер по ВЭД</h3>
-                    <br><a href="experience.html" class="joblinks local">Страница "Резюме".</a><br>
-                    <br><a href="https://spb.hh.ru/resume/4e092907ff081676c90039ed1f764e6b675478" target="_blank" class="joblinks hh">Резюме на hh.ru</a>
-                </div>
-                <div class="newjob explain">Я работал менеджером по ВЭД на <a href="experience.html#last">последнем месте работы</a>, приобрёл небольшой опыт и общее понимание специфики работы. Самым разумным выбором для меня сейчас представляется продолжить работать в этой сфере, углубиться в специфику работы, приобрести большую самостоятельность в профессии.</div>
-            </div>
-            <div class="newjobflex">
-                <div class="newjob title">
-                    <h3><s>Недо-</s>Интернет-Маркетолог</h3>
-                    <br><a href="experience.html" class="joblinks local">Страница "Резюме".</a><br>
-                    <br><a href="https://spb.hh.ru/resume/a8988e5bff07962b5f0039ed1f47514b61516e" target="_blank" class="joblinks hh">Резюме на hh.ru</a>
-                </div>
-                <div class="newjob explain">У меня есть мысли стать маркетологом, эта сфера мне даже немного близка. Я вёл свой YouTube канал, страницы в соцсетях ему посвящённые, занимался продвижением канала, его страницы ВК и профиля Instagram. Продвигал через рекламу соцсетей, партнёрские посты, сторонние сервисы для продвижения. Но продвижение или настройка директа/AdWords меня не сильно привлекают. Мне больше всего нравится анализировать статистику, следить за поступающими данными, делать выводы, после чего перестраивать рекламную кампанию, исходя из этих данных. Зачем изображать креатив и игнорировать статистику? Работать вслепую, без обратной связи как минимум неэффективно. Кстати, в начале 2020 года я прошёл очный курс по интернет-маркетингу и рекламным сетям Яндекс.Директ и Google AdWords на базе университета ИТМО. Это был интересный опыт.</div>
-            </div>
-            <div class="newjobflex">
-                <div class="newjob title">
-                    <h3>Переводчик, копирайтер и т.п.</h3>
-                    <br><a href="experience.html" class="joblinks local">Страница "Резюме".</a><br>
-                    <br><a href="https://spb.hh.ru/resume/4501521cff041b6ab40039ed1f364d66623330" target="_blank" class="joblinks hh">Резюме на hh.ru</a>
-                </div>
-                <div class="newjob explain">К сожалению, непросто найти достойную работу в области копирайтинга или перевода. Я не рассматриваю внештатные должности, что сразу отсеивает большинство предложений. Однако, меня бы заинтересовали внештатные долности с заключением договора как на перевод, так и на копирайтинг. Такой вариант считаю допустимым, так как он гарантирует некоторую защиту обеих сторон. В переводе штатные должности с хорошей оплатой встречаются редко, в основном проекты или вахтовый метод. Плюс на такие должности всегда конкуренция в несколько сотен человек, а берут того, кто попросит меньше других.<br><br>Быть копирайтером в маркетинге для меня не очень привлекательно, так как я не хочу писать УТП стопками. При сочинении УТП, мне кажется, будто я обманываю людей. Работать копирайтером для меня интереснее в технической области, тог есть писать технические тексты, узнавать новое. Я не хочу писать о том, во что я не верю. Текст получится совсем не правдоподобный. Поэтому я бы писал максимально не продающие тексты, а лучше, например, техничсекие или познавательные.<div>
-                    </div>
-                </div>
-            </div> 
-        </div> -->
 
             <a href="#top">
                 <div class="pagetop"><svg width="1.2em" height="1.2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -207,23 +137,7 @@
             </a>
         </div>
 
-        <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-
-            for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.maxHeight) {
-                        panel.style.maxHeight = null;
-                    } else {
-                        panel.style.maxHeight = panel.scrollHeight + "px";
-                    }
-                });
-            }
-        </script>
-
+        
         <div class="footer">
             <p>&copy; <script>
                     document.write(new Date().getFullYear())
@@ -252,7 +166,7 @@
                             <path id="wha" d="M12.036 5.339c-3.635 0-6.591 2.956-6.593 6.589-.001 1.483.434 2.594 1.164 3.756l-.666 2.432 2.494-.654c1.117.663 2.184 1.061 3.595 1.061 3.632 0 6.591-2.956 6.592-6.59.003-3.641-2.942-6.593-6.586-6.594zm3.876 9.423c-.165.463-.957.885-1.337.942-.341.051-.773.072-1.248-.078-.288-.091-.657-.213-1.129-.417-1.987-.858-3.285-2.859-3.384-2.991-.099-.132-.809-1.074-.809-2.049 0-.975.512-1.454.693-1.653.182-.2.396-.25.528-.25l.38.007c.122.006.285-.046.446.34.165.397.561 1.372.611 1.471.049.099.083.215.016.347-.066.132-.099.215-.198.33l-.297.347c-.099.099-.202.206-.087.404.116.198.513.847 1.102 1.372.757.675 1.395.884 1.593.983.198.099.314.083.429-.05.116-.132.495-.578.627-.777s.264-.165.446-.099 1.156.545 1.354.645c.198.099.33.149.38.231.049.085.049.482-.116.945zm3.088-14.762h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-6.967 19.862c-1.327 0-2.634-.333-3.792-.965l-4.203 1.103 1.125-4.108c-.694-1.202-1.059-2.566-1.058-3.964.002-4.372 3.558-7.928 7.928-7.928 2.121.001 4.112.827 5.609 2.325s2.321 3.491 2.32 5.609c-.002 4.372-3.559 7.928-7.929 7.928z" /></svg></a>
                     <a onmousedown="event.preventDefault ? event.preventDefault() : event.returnValue = false" class="icons-link" href="tel:+79211872272" target="_blank"><svg class="icons pho" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path id="pho" d="M14.89 23.654c-7.367 3.367-18.802-18.86-11.601-22.615l2.107-1.039 3.492 6.817-2.082 1.026c-2.189 1.174 2.37 10.08 4.609 8.994.091-.041 2.057-1.007 2.064-1.011l3.521 6.795c-.008.004-1.989.978-2.11 1.033zm-1.538-13.409l2.917.87c.223-.747.16-1.579-.24-2.317-.399-.739-1.062-1.247-1.808-1.469l-.869 2.916zm1.804-6.058c1.551.462 2.926 1.516 3.756 3.051.831 1.536.96 3.263.498 4.813l-1.795-.535c.325-1.091.233-2.306-.352-3.387-.583-1.081-1.551-1.822-2.643-2.146l.536-1.796zm.95-3.187c2.365.705 4.463 2.312 5.729 4.656 1.269 2.343 1.466 4.978.761 7.344l-1.84-.548c.564-1.895.406-4.006-.608-5.882-1.016-1.877-2.696-3.165-4.591-3.729l.549-1.841z" /></svg></a>
-                    <a onmousedown="event.preventDefault ? event.preventDefault() : event.returnValue = false" class="icons-link" href="mailto:vladimir24.08.92@gmail.com?subject=Сообщение с сайта&body=Маркиев Владмир, здравствуйте," target="_blank"><svg class="icons ema" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                    <a onmousedown="event.preventDefault ? event.preventDefault() : event.returnValue = false" class="icons-link" href="/cdn-cgi/l/email-protection#c7b1aba6a3aeaaaeb5f5f3e9f7ffe9fef587a0aaa6aeabe9a4a8aaf8b4b2a5ada2a4b3fa1766177917791776164e1772177a177f1772e71646e716461777177e16451777e1a5a8a3befa175b17771647177d177f17721775e71755177c17771773177b177f1647ebe7177017731647177717751646164517751644177e16451772eb" target="_blank"><svg class="icons ema" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
                             <path fill="white" d="M19 24h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5v14c0 2.761-2.238 5-5 5z" />
                             <path id="ema" d="M19 24h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5v14c0 2.761-2.238 5-5 5zm-.141-6.333c.63 0 1.141-.512 1.141-1.142v-9.05c0-.63-.511-1.142-1.141-1.142h-13.718c-.63 0-1.141.512-1.141 1.142v9.05c0 .63.511 1.142 1.141 1.142h13.718zm-6.859-4.058l-6.228-4.321-.014 7.712h12.457v-7.712l-6.215 4.321zm5.913-6.609c-1.745 1.215-5.913 4.153-5.913 4.153l-5.947-4.153h11.86z" /></svg></a>
                     <a class="icons-link" href="https://join.skype.com/invite/jz5UwAeAepqL" target="_blank"><svg class="icons sky" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -260,4 +174,4 @@
                             <path id="sky" d="M16.283 13.883c0 2.026-1.615 3.354-4.026 3.354-2.121 0-4.252-.965-4.242-2.627.003-.501.376-.961.872-.961 1.249 0 1.237 1.863 3.225 1.863 1.396 0 1.872-.764 1.872-1.296 0-1.924-6.03-.745-6.03-4.362 0-1.958 1.602-3.309 4.12-3.161 2.401.142 3.809 1.202 3.944 2.193.067.647-.361 1.151-1.105 1.151-1.086 0-1.196-1.454-3.067-1.454-.844 0-1.556.352-1.556 1.116 0 1.597 5.993.67 5.993 4.184zm7.717-8.883v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5zm-4.675 8.311c.904-5.177-3.61-9.608-8.702-8.653-3.881-2.374-8.335 2.151-5.956 6.02-.925 5.165 3.589 9.654 8.722 8.673 3.888 2.357 8.329-2.174 5.936-6.04z" /></svg></a></div>
             </div>
         </div>
-</body></html>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body></html>

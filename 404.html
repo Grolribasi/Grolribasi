@@ -13,7 +13,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="style.css">
     <title>Don't panic! </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_main.css">
 </head>
 
 <body>
@@ -31,7 +31,7 @@
 
     <div class="form">
       <label for="guessField">Введите число: </label><input type="text" id="guessField" class="guessField">
-      <input type="submit" value="Submit guess" class="guessSubmit">
+      <input type="submit" value="Предложить число" class="guessSubmit">
     </div>
 
     <div class="resultParas">
@@ -53,13 +53,13 @@
       function checkGuess() {
         let userGuess = Number(guessField.value);
         if (guessCount === 1) {
-          guesses.textContent = 'Previous guesses: ';
+          guesses.textContent = 'Предыдущие попытки: ';
         }
 
         guesses.textContent += userGuess + ' ';
 
         if (userGuess === randomNumber) {
-          lastResult.textContent = 'Congratulations! You got it right!';
+          lastResult.textContent = 'Ура! Вы угадали!';
           lastResult.style.backgroundColor = 'green';
           lowOrHi.textContent = '';
           setGameOver();
@@ -88,8 +88,8 @@
         guessField.disabled = true;
         guessSubmit.disabled = true;
         resetButton = document.createElement('button');
-        resetButton.textContent = 'Новая игра';
-        document.body.appendChild(resetButton);
+        resetButton.textContent = 'Ещё разок?';
+        document.getElementsByClassName("content")[0].appendChild(resetButton);
         resetButton.addEventListener('click', resetGame);
       }
 
@@ -105,7 +105,7 @@
         guessSubmit.disabled = false;
         guessField.value = '';
         guessField.focus();
-        lastResult.style.backgroundColor = 'white';
+        lastResult.style.backgroundColor = 'white'; //НУЖЕН ЦВЕТ!
         randomNumber = Math.floor(Math.random() * 100) + 1;
       }
     </script>

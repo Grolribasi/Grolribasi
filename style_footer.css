@@ -1,0 +1,165 @@
+/* FOOTER */
+.footer {
+    max-width: 100%;
+    min-width: 15%;
+    font-family: 'Noto Serif', serif;
+    background-color: rgba(146, 168, 209, .7);
+    overflow: hidden;
+    text-align: center;
+    padding: 1em;
+}
+.icons-link {
+    margin-right: 0.5em;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+}
+
+#social-icons {
+    align-content: center;
+    display: inline-block;
+}
+
+#social-icons-parent {
+    text-align: center;
+}
+
+.icons {
+    width: 2em;
+    height: 2em;
+    opacity: .5;
+    fill: #577284;
+}
+
+.icons:hover {
+    opacity: 1;
+    transition: .3s;
+}
+
+.vko:hover #vko {
+    fill: rgb(76, 117, 163);
+    transition: .3s;
+}
+
+.you:hover #you {
+    fill: rgb(196, 48, 43);
+    transition: .3s;
+}
+
+.face:hover #face {
+    fill: rgb(59, 89, 152);
+    transition: .3s;
+}
+
+.lin:hover #lin {
+    fill: rgb(14, 118, 168);
+    transition: .3s;
+}
+
+.ins:hover #ins {
+    fill: rgb(216, 0, 90);
+    transition: .3s;
+}
+
+.tel:hover #tel {
+    fill: rgb(0, 136, 204);
+    transition: .3s;
+}
+
+.wha:hover #wha {
+    fill: rgb(79, 206, 93);
+    transition: .3s;
+}
+
+.pho {
+    background-color: rgb(87, 114, 132);
+    border-radius: 5px;
+}
+
+.pho:hover {
+    background-color: rgba(87, 114, 132, .5);
+    transition: .3s;
+}
+
+.pho #pho {
+    fill: white;
+}
+
+
+.pho:hover #pho {
+    fill: rgb(255, 64, 0);
+    transition: .3s;
+}
+
+.ema:hover #ema {
+    fill: rgb(178, 49, 33);
+    transition: .3s;
+}
+
+.sky:hover #sky {
+    fill: rgb(0, 175, 240);
+    transition: .3s;
+}
+
+/* ПОВЕДЕНИЕ ИКОНОК ФУТЕРА ПРИ ФОКУСЕ */
+a.icons-link:focus svg {
+    opacity: 1;
+    transition: .3s;
+}
+
+a.icons-link:focus #vko {
+    fill: rgb(76, 117, 163);
+    transition: .3s;
+}
+
+a.icons-link:focus #you {
+    fill: rgb(196, 48, 43);
+    transition: .3s;
+}
+
+a.icons-link:focus #face {
+    fill: rgb(59, 89, 152);
+    transition: .3s;
+}
+
+a.icons-link:focus #lin {
+    fill: rgb(14, 118, 168);
+    transition: .3s;
+}
+
+a.icons-link:focus #ins {
+    fill: rgb(216, 0, 90);
+    transition: .3s;
+}
+
+a.icons-link:focus #tel {
+    fill: rgb(0, 136, 204);
+    transition: .3s;
+}
+
+a.icons-link:focus #wha {
+    fill: rgb(79, 206, 93);
+    transition: .3s;
+}
+
+a.icons-link:focus {
+    background-color: rgba(87, 114, 132, .5);
+    transition: .3s;
+}
+
+a.icons-link:focus #pho {
+    fill: rgb(255, 64, 0);
+    transition: .3s;
+}
+
+a.icons-link:focus #ema {
+    fill: rgb(178, 49, 33);
+    transition: .3s;
+}
+
+a.icons-link:focus #sky {
+    fill: rgb(0, 175, 240);
+    transition: .3s;
+}
+
+/* КОНЕЦ ФУТЕРА */

@@ -4,11 +4,19 @@
 <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html">
-    <title>Моё резюме - Владимир Маркиев</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Резюме технического писателя. Владимир Маркиев</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style_main.css">
+    <link rel="stylesheet" href="style_nav.css">
+    <link rel="stylesheet" href="style_accordion.css">
+    <link rel="stylesheet" href="style_search-stub.css">
+    <link rel="stylesheet" href="style_footer.css">
+    <!-- Stylesheets -->
+    
     <meta name="robots" content="follow, index" />
-    <meta name="description" content="Владимир Маркиев, Vladimir Markiev: Технический писатель в Санкт-Петербурге. Резюме и опыт работы. История трудовой деятельности." />
-    <meta property="og:title" content="Резюме - Владимир Маркиев" />
+    <meta name="description" content="Резюме Владимира Маркиева, технического писателя из Санкт-Петербурга. Technical Writer Vladimir Markiev, resume." />
+    <meta property="og:title" content="Резюме Владимира Маркиева, технического писателя из Санкт-Петербурга" />
     <meta property="og:type" content="profile" />
     <meta property="profile:first_name" content="Владимир" />
     <meta property="profile:last_name" content="Маркиев" />
@@ -16,138 +24,64 @@
     <meta property="og:url" content="https://vladimir-markiev.name" />
     <link rel="canonical" content="https://vladimir-markiev.name" />
     <meta property="og:image" content="https://vladimir-markiev.name/img/profile.jpg">
-    <meta property="og:description" content="Владимир Маркиев: Технический писатель в Санкт-Петербурге. Резюме и опыт работы. История трудовой деятельности." />
+    <meta property="og:description" content="Резюме Владимира Маркиева, технического писателя из Санкт-Петербурга" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Markiev Vladimir">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/favicon/favicon.ico">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <!-- Favicons -->
+
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function(m, e, t, r, i, k, a) {
-            m[i] = m[i] || function() {
-                (m[i].a = m[i].a || []).push(arguments)
-            };
-            m[i].l = 1 * new Date();
-            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-        })
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-        ym(62734534, "init", {
-            clickmap: true,
-            trackLinks: true,
-            accurateTrackBounce: true,
-            webvisor: true
-        });
-
+    <script type="text/javascript" src="js_metrika.js">
     </script>
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/62734534" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
-    <style>
-        .content a {
-            color: #fff;
-            font-weight: 600;
-        }
 
-        .content a:visited {
-            color: #92A8D1;
-            text-decoration: none;
-        }
+    <script type="text/javascript" src="js_nav.js">
+    </script>
 
-        .content a:hover {
-            text-decoration: none;
-            color: #F3E0BE;
-        }
+    <script type="text/javascript" src="js_stub.js">
+    </script>
 
-        .content a:active {
-            color: #DFCFBE;
-            text-decoration: underline;
-        }
-
-        .headline {
-            font-family: "Open Sans Condensed", sans-serif;
-            max-width: 90%;
-            text-align: center;
-            color: #fff;
-            background-color: #03a5fc;
-            border-radius: 20px;
-            margin: 0 auto;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            padding: 0px 10px 0px 10px;
-            font-family: "Open Sans Condensed", sans-serif;
-            font-weight: 600;
-            font-size: 1.2em;
-        }
-
-        .subheadline {
-            font-style: italic;
-            text-align: center;
-            display: block;
-        }
-
-    </style>
 </head>
 <a name="top"></a>
 
 <body>
-    <div class="sidenav">
+   <!-- МЕНЮ -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0);" class="closebtn" onclick="closeNav()">X</a>
         <a tabindex="1" href="index.html">Главная</a>
         <a tabindex="2" href="about.html">Обо мне</a>
         <a tabindex="3" href="education.html">Образование</a>
         <a tabindex="4" class="current" href="#top">Резюме</a>
-        <a tabindex="5" href="searchingfor.html">Желаемая должность</a>
+        <a tabindex="5" href="skills.html">Желаемая должность</a>
         <a tabindex="6" href="cases.html">Портфолио</a>
     </div>
-    <div class="topnav">
-        <a href="#top" class="navbar">Выпадающее меню ---></a>
-        <div id="myLinks">
-            <a tabindex="1" href="index.html">Главная</a>
-            <a tabindex="2" href="about.html">Обо мне</a>
-            <a tabindex="3" href="education.html">Образование</a>
-            <a tabindex="4" class="current" href="#top">Резюме</a>
-            <a tabindex="5" href="searchingfor.html">Желаемая должность</a>
-            <a tabindex="6" href="cases.html">Портфолио</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <svg class="bi bi-list" width=".9em" height=".9em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z" clip-rule="evenodd" />
-            </svg>
-        </a>
-    </div>
-
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-
-    </script>
 
     <div class="main">
         <div class="header">
             <nav>
                 <ul class="breadcrumb">
+                <!-- КНОПКА МЕНЮ -->
+                    <li>
+                         <button class="openbtn" onclick="openNav()">Открыть меню</button>
+                    </li>
+                <!-- КОНЕЦ МЕНЮ -->
                     <li><a tabindex="7" href="index.html">Главная</a></li>
                     <li>Опыт работы</li>
                 </ul>
             </nav>
-
-            <h1 class="h1">Опыт работы - Резюме</h1>
-
         </div>
         <div class="stub" id="stub">
             <div class="pagenav">
@@ -216,21 +150,11 @@
                 </a>
             </div><a tabindex="8" id="stublink" href=#>Меню страницы</a>
         </div>
-
-        <script>
-            var prevScrollPos = window.pageYOffset;
-            window.onscroll = function() {
-                var currentScrollPos = window.pageYOffset;
-                document.getElementById("stub").style.display = prevScrollPos > currentScrollPos ? "block" : "none";
-                prevScrollPos = currentScrollPos;
-            }
-
-        </script>
-
+        <div class="content first"><h1 class="h1">Моё резюме</h1></div>
         <a tabindex="-1" name="now"></a>
-        <div class="content">
-            <h2 class="headline">Фриланс, не только переводы.</h2>
-            <p class="subheadline">С 1 апреля 2020</p>
+        <div class="content second">
+            <h2 class="h2">Фриланс, не только переводы.</h2>
+            <div class="subheadline">С 1 апреля 2020</div>
             <p>Я закончил работать в ЭРОСТ Груп ровно в первую неделю выходных дней с сохранением зарплаты и к этому времени у меня уже было предложение о работе.
             </p>
             <p>Но неожиданно предложение о работе отозвали и перестали отвечать на мои письма. С 1 апреля 2020 года я занимаюсь фрилансом, но не переводом. Я выполняю статьи, пишу технические тексты, документацию для программного обеспечения, политики конфиденциальности и т.д.</p>
@@ -257,8 +181,8 @@
 
         <a tabindex="-1" name="last"></a>
         <div class="content">
-            <h2 class="headline"><a href="http://www.erost.ru/" target="_blank">"ООО ЭРОСТ Груп"</a>.</h2>
-            <p class="subheadline">Февраль 2019 — апрель 2020</p>
+            <h2 class="h2"><a class="exp-link" href="http://www.erost.ru/" target="_blank">"ООО ЭРОСТ Груп"</a>.</h2>
+            <div class="subheadline">Февраль 2019 — апрель 2020</div>
             <p>Штатная должность в компании размером чуть более 10 человек.</p>
             <p>Я был очень рад найти постоянную работу, но с самого начала процесс приёма на работу выглядел немного странно. Меня пригласили на собеседование, рассказали, чем занимается компания, спросили обо мне, моём опыте. С одной стороны, обычный процесс, только со мной общались так, будто я уже принят, хоть мы и виделись в первый раз. Потом мне показали пустой офис компании в 7 часов вечера, пригласили завтра вступить в новую должность. Я был удивлён, но согласился.</p>
             <p>Директор компании не оплачивал перереботки, сам мог оставаться в офисе до 11 вечера и хотел от сотрудников того же. На компьютерах сотрудников без их согласия или уведомления было установлено следящее ПО. Нередки были и нецензурные выражения в адрес клиентов и сотрудников.</p>
@@ -276,8 +200,8 @@
 
         <a tabindex="-1" name="previous"></a>
         <div class="content">
-            <h2 class="headline">Внештатное сотрудничество с <a href="https://v6.spb.ru/" target="_blank">Юридическим центром "Восстания 6"</a>.</h2>
-            <p class="subheadline">Февраль 2018 — февраль 2019</p>
+            <h2 class="h2">Внештатное сотрудничество с <a class="exp-link" href="https://v6.spb.ru/" target="_blank">Юридическим центром "Восстания 6"</a>.</h2>
+            <div class="subheadline">Февраль 2018 — февраль 2019</div>
             <p>За более чем год сотрудничества с бюро переводов "Восстания 6" я работал над большим количеством письменных и устных переводов. Проекты были интересные и устраивали меня почти всем.</p>
             <p>Я переводил письменно примерно по 10 страниц по 1800 знаков с пробелами в день, несколько раз в месяц меня звали переводить устно.</p>
             <p>Самое активное бюро, с которым я сотрудничал, много занимался письменным техническим, устным переводом, бюро всегда платило вовремя, честно и полностью.</p>
@@ -296,8 +220,8 @@
 
         <a tabindex="-1" name="nov17"></a>
         <div class="content">
-            <h2 class="headline">Внештатное сотрудничество с <a href="https://www.lmgp.ru/" target="_blank">Бюро переводов LMGP</a> <a href="https://proflingva.ru/" target="_blank">"Профлингва"</a>.</h2>
-            <p class="subheadline">Ноябрь 2017 — Апрель 2018</p>
+            <h2 class="h2">Внештатное сотрудничество с <a class="exp-link" href="https://www.lmgp.ru/" target="_blank">Бюро переводов LMGP</a> <a class="exp-link" href="https://proflingva.ru/" target="_blank">"Профлингва"</a>.</h2>
+            <div class="subheadline">Ноябрь 2017 — Апрель 2018</div>
             <p>Переводил письменно в нефтегазовой, в технической, в IT сфере.
             </p>
             <p>Переводил много, активно занимался фриланс-переводами примерно по 10-12 страниц по 1800 знаков с пробелами в день.</p>
@@ -315,8 +239,8 @@
 
         <a tabindex="-1" name="sep16"></a>
         <div class="content">
-            <h2 class="headline"><a href="http://www.rencons.com/" target="_blank">Ренейссанс Констракшн (Renaissance Construction)</a></h2>
-            <p class="subheadline">Сентябрь 2016 — ноябрь 2017</p>
+            <h2 class="h2"><a class="exp-link" href="http://www.rencons.com/" target="_blank">Ренейссанс Констракшн (Renaissance Construction)</a></h2>
+            <div class="subheadline">Сентябрь 2016 — ноябрь 2017</div>
             <p>Официальная штатная работа. Технический переводчик. Работа на стройплощадке здания Лахта Центр в Санкт-Петербурге. Работа, которой я горжусь. При возможности рассказываю всем, что я приложил руку к исторической стройке, пусть даже не совсем прямым образом. Эта работа во многом была лучшей - по оплате, по возможности не только представить то, о чём перевод в теории или по картинкам в интернете, но и увидеть своими глазами, спросить профессионалов, как это устроено, если что-то непонятно и требуются пояснения.</p>
             <p>Я переводил очень много, каждый день была работа, были тексты на перевод. О многих типах документов, которые нужно было переводить, я вообще никогда не слышал, темами вроде геодезии даже не думал заниматься, но на стройплощадке я смог познакомиться со всем этим и даже больше:</p>
             <ul class="in-content-ul">
@@ -350,8 +274,8 @@
 
         <a tabindex="-1" name="jan15"></a>
         <div class="content">
-            <h2 class="headline">Сотрудничество с бюро переводов на внештатной основе. Бюро переводов: <a href="http://babylon-online.ru/">Вавилон</a>, <a href="http://babylon-online.ru/">Переводим.про</a>, <a href="http://isup.me/proofperevod.ru">Proof</a>, <a href="http://www.perevod-spb.ru/">5-я линия</a>, <a href="https://janusww.com/" target="_blank">Janus Worldwide.</a></h2>
-            <p class="subheadline">Январь 2015 — Август 2016</p>
+            <h2 class="h2">Сотрудничество с бюро переводов на внештатной основе. Бюро переводов: <a class="exp-link" href="http://babylon-online.ru/">Вавилон</a>, <a class="exp-link" href="http://babylon-online.ru/">Переводим.про</a>, <a class="exp-link" href="http://isup.me/proofperevod.ru">Proof</a>, <a class="exp-link" href="http://www.perevod-spb.ru/">5-я линия</a>, <a class="exp-link" href="https://janusww.com/" target="_blank">Janus Worldwide.</a></h2>
+            <div class="subheadline">Январь 2015 — Август 2016</div>
             <p>По окончании бакалавриата я достиг уровня знания английского языка достаточного для работы удалёнными фриланс-переводами в различных бюро переводов Санкт-Петербурга и Москвы.</p>
             <p>Это были первые серьёзные шаги в направлении работы переводчиком во время обучения в магистратуре. Работая на бюро переводов, я в среднем я переводил 7-10 страниц по 1800 знаков с пробелами в день с английского или на английский. Переводчил чертежи для какого-то проекта по установке спутниковой антенны.</p>
 
@@ -368,8 +292,8 @@
 
         <a tabindex="-1" name="jan14"></a>
         <div class="content">
-            <h2 class="headline"><a href="https://linguatorium.com/" target="_blank">Центр лингвистических исследований им. А.А. Худякова, Лингвистический тренажёр «Лингваториум»</a></h2>
-            <p class="subheadline">Январь 2014 — Август 2015</p>
+            <h2 class="h2"><a class="exp-link" href="https://linguatorium.com/" target="_blank">Центр лингвистических исследований им. А.А. Худякова, Лингвистический тренажёр «Лингваториум»</a></h2>
+            <div class="subheadline">Январь 2014 — Август 2015</div>
 
             <button class="accordion">Об опыте</button>
             <div class="panel">
@@ -379,8 +303,12 @@
             <button class="accordion">Об уходе</button>
             <div class="panel">
                 <p>Закончил исследование для диплома, пошёл учиться дальше, переехал в новый город, решил найти работу самостоятельно.</p>
+                
             </div>
         </div>
+
+        <script type="text/javascript" src="js_acc.js">
+        </script>
 
         <a href="#top">
             <div class="pagetop"><svg width="1.2em" height="1.2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -390,24 +318,6 @@
                 </svg><br>Вверх</div>
         </a>
     </div>
-
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-        }
-
-    </script>
 
     <div class="footer">
         <p>&copy; <script>
