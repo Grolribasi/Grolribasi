@@ -41,8 +41,7 @@ ul.breadcrumb {
     background-color: #0288d1;
     border-radius: 18px;
     margin-top: 12px;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: 'Noto Serif', serif;
 }
 
 .openbtn:before {
@@ -57,8 +56,7 @@ content: url("data:image/svg+xml,%3Csvg class='bi bi-list' width='1em' height='1
     color: white;
     border: none;
     border-radius: 18px;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: 'Noto Serif', serif;
 }
 
 .openbtn:hover {
@@ -101,31 +99,12 @@ ul.breadcrumb li a:active {
 
 
 @media only screen and (max-width: 800px) {
-    .sidenav {
-        display: none;
-    }
-
-    .topnav,
-    .topnav a {
-        display: block;
-    }
-
-    .sidenav {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
+   /* КАК ОТОБРАЖАТЬ МЕНЮ НА УЗКИХ ЭКРАНАХ? */
 
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidebar {padding-top: 12px;}
-  .sidebar a {font-size: 18px;}
+  
 }
 
-@media only screen and (max-width: 800px) {
-    .main {
-        margin-left: 0;
-    }
-}

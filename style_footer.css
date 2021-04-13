@@ -4,7 +4,6 @@
     min-width: 15%;
     font-family: 'Noto Serif', serif;
     background-color: rgba(146, 168, 209, .7);
-    overflow: hidden;
     text-align: center;
     padding: 1em;
 }
@@ -17,11 +16,6 @@
 
 #social-icons {
     align-content: center;
-    display: inline-block;
-}
-
-#social-icons-parent {
-    text-align: center;
 }
 
 .icons {
