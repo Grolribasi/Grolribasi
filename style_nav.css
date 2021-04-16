@@ -1,17 +1,8 @@
-/* Style the list */
-ul.breadcrumb {
-    font-family: 'Roboto', sans-serif;
-    padding: 12px 18px;
-    list-style: none;
-    background-color: #0288d1;
-    border-radius: 18px;
-    margin-top: 12px;
-    
-}
 
 .openbtn:before {
-content: url("data:image/svg+xml,%3Csvg class='bi bi-list' width='1em' height='1em' viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z' clip-rule='evenodd' /%3E%3C/svg%3E");
-
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' enable-background='new 0 0 24 24' height='24px' viewBox='0 0 24 24' width='24px' fill='rgb(255, 255, 255)'%3E%3Cpath d='M0,0h24v24H0V0z' fill='none'/%3E%3Cpath d='M3,18h13v-2H3V18z M3,13h10v-2H3V13z M3,6v2h13V6H3z M21,15.59L17.42,12L21,8.41L19.59,7l-5,5l5,5L21,15.59z'/%3E%3C/svg%3E");;
+    vertical-align: middle;
+    display: inline-block;
 }
 .openbtn {
     font-family: 'Roboto', sans-serif;
@@ -30,6 +21,29 @@ content: url("data:image/svg+xml,%3Csvg class='bi bi-list' width='1em' height='1
 
 .openbtn:hover {
     background-color: rgb(49 109 91);
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    font-size: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    top: 12px;
+    width: 250px;
+}
+
+.sidebar .closebtn:before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' enable-background='new 0 0 24 24' height='24px' viewBox='0 0 24 24' width='24px' fill='rgb(255, 255, 255)'%3E%3Cpath d='M0,0h24v24H0V0z' fill='none'/%3E%3Cpath d='M3,18h13v-2H3V18z M3,13h10v-2H3V13z M3,6v2h13V6H3z M21,15.59L17.42,12L21,8.41L19.59,7l-5,5l5,5L21,15.59z'/%3E%3C/svg%3E");;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Style the list */
+ul.breadcrumb {
+    font-family: 'Roboto', sans-serif;
+    padding: 12px 18px;
+    list-style: none;
+    background-color: rgb(14 85 64);    
 }
 
 /* Display list items side by side */
@@ -54,10 +68,10 @@ ul.breadcrumb li a {
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
     text-decoration: none;
+    color: #cccccc;
 }
 
 ul.breadcrumb li a:focus {
-    background-color: #01314c;
     text-decoration: none;
 }
 
@@ -102,19 +116,6 @@ ul.breadcrumb li a:active {
    background-color: rgb(31 97 77); 
 }
 
-.sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 24px;
-    font-size: 24px;
-    margin-left: 50px;
-}
-
-.sidebar .closebtn:before {
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' enable-background='new 0 0 24 24' height='24px' viewBox='0 0 24 24' width='24px' fill='rgb(255, 255, 255)'%3E%3Cpath d='M0,0h24v24H0V0z' fill='none'/%3E%3Cpath d='M3,18h13v-2H3V18z M3,13h10v-2H3V13z M3,6v2h13V6H3z M21,15.59L17.42,12L21,8.41L19.59,7l-5,5l5,5L21,15.59z'/%3E%3C/svg%3E");;
- vertical-align: middle;
-  display: inline-block;
-}
 
 @media only screen and (max-width: 800px) {
    /* КАК ОТОБРАЖАТЬ МЕНЮ НА УЗКИХ ЭКРАНАХ? */
