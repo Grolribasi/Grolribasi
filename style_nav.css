@@ -1,47 +1,12 @@
-/** SIDEBAR **/
-
-.sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidebar a:hover {
-    color: #f1f1f1;
-}
-
-.sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 24px;
-    font-size: 32px;
-    margin-left: 50px;
-}
-
 /* Style the list */
 ul.breadcrumb {
+    font-family: 'Roboto', sans-serif;
     padding: 12px 18px;
     list-style: none;
     background-color: #0288d1;
     border-radius: 18px;
     margin-top: 12px;
-    font-family: 'Noto Serif', serif;
+    
 }
 
 .openbtn:before {
@@ -49,18 +14,22 @@ content: url("data:image/svg+xml,%3Csvg class='bi bi-list' width='1em' height='1
 
 }
 .openbtn {
+    font-family: 'Roboto', sans-serif;
     padding: 8px;
     font-size: 24px;
     cursor: pointer;
-    background-color: #111;
+    background-color: rgb(14 85 64);
     color: white;
     border: none;
     border-radius: 18px;
-    font-family: 'Noto Serif', serif;
+}
+
+.openbtn:active {
+    background-color: rgb(128 165 154);
 }
 
 .openbtn:hover {
-    background-color: #444;
+    background-color: rgb(49 109 91);
 }
 
 /* Display list items side by side */
@@ -97,6 +66,55 @@ ul.breadcrumb li a:active {
     text-decoration: underline;
 }
 
+/** SIDEBAR **/
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(14 85 64);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: rgb(49 109 91);
+}
+
+.sidebar a:active {
+    background-color: rgb(128 165 154);
+}
+
+.sidebar a.current {
+   background-color: rgb(31 97 77); 
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 24px;
+    font-size: 24px;
+    margin-left: 50px;
+}
+
+.sidebar .closebtn:before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' enable-background='new 0 0 24 24' height='24px' viewBox='0 0 24 24' width='24px' fill='rgb(255, 255, 255)'%3E%3Cpath d='M0,0h24v24H0V0z' fill='none'/%3E%3Cpath d='M3,18h13v-2H3V18z M3,13h10v-2H3V13z M3,6v2h13V6H3z M21,15.59L17.42,12L21,8.41L19.59,7l-5,5l5,5L21,15.59z'/%3E%3C/svg%3E");;
+ vertical-align: middle;
+  display: inline-block;
+}
 
 @media only screen and (max-width: 800px) {
    /* КАК ОТОБРАЖАТЬ МЕНЮ НА УЗКИХ ЭКРАНАХ? */

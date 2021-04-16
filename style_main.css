@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;700&display=swap');
-
 * {
     box-sizing: border-box;
 }
@@ -25,6 +21,7 @@ body {
 
 /* ЗАГОЛОВКИ */
 .h1 {
+    font-family: 'Roboto', sans-serif;
     max-width: 80%;
     text-align: center;
     color: white;
@@ -35,12 +32,11 @@ body {
     margin-bottom: 8px;
     text-transform: uppercase;
     padding: 0px 8px 0px 10px;
-    font-family: 'Noto Serif', serif;
     font-size: 1.8em;
 }
 
 .h2 {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Roboto', sans-serif;
     max-width: 60%;
     text-align: center;
     color: #fff;
@@ -51,7 +47,7 @@ body {
     margin-bottom: 8px;
     text-transform: uppercase;
     padding: 0px 8px 0px 8px;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.6em;
 }
 
@@ -103,12 +99,12 @@ body {
 /* CONTENT DIV */
 
 .content {
+    font-family: 'Roboto', sans-serif;
     max-width: 75%;
     margin: 0 auto;
     margin-top: 8px;
     margin-bottom: 8px;
     line-height: 1.6em;
-    font-family: 'Noto Serif', serif;
     background: rgba(78, 192, 253, .7);
     overflow: hidden;
     padding: 1em;
@@ -125,7 +121,7 @@ body {
 /* ОСНОВНЫЕ ССЫЛКИ */
 .content a {
     color: #0262d5;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .content a:visited {
@@ -180,7 +176,7 @@ body {
 
 a.exp-link {
     color: #fff;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 a.exp-link:visited {
