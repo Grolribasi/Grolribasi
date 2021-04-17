@@ -8,8 +8,6 @@
 
     <!-- Preload fonts -->
     <link rel="preload" href="style_fonts.css" as="style">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="style_main.css">
@@ -45,20 +43,21 @@
     <meta name="theme-color" content="#ffffff">
     <!-- Favicons -->
 
-    <script type="text/javascript" src="js_nav.js">
+    <script src="js_nav.js">
     </script>
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" src="js_metrika.js">
+    <script src="js_metrika.js">
     </script>
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/62734534" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
 </head>
+
 <a name="top"></a>
 
 <body>
-  <!-- МЕНЮ -->
+    <!-- МЕНЮ -->
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0);" class="closebtn" onclick="closeNav()">Скрыть</a>
         <a tabindex="1" href="index.html">Главная</a>
@@ -69,22 +68,21 @@
         <a tabindex="6" href="cases.html">Портфолио</a>
     </div>
 
-    <div class="main">
-        <div class="header">
-            <nav>
-                <ul class="breadcrumb">
-                <!-- КНОПКА МЕНЮ -->
-                    <li>
-        <button class="openbtn" onclick="openNav()">Открыть меню</button>
-                    </li>
-                <!-- КОНЕЦ МЕНЮ -->
-                    <li><a tabindex="7" href="index.html">Главная</a></li>
-                    <li>Обо мне</li>
-                </ul>
-            </nav>
-        </div>
+    <ul class="breadcrumb" id="breadcrumb">
+        <li>
+            <!-- КНОПКА МЕНЮ -->
+            <button class="openbtn" onclick="openNav()">Открыть меню</button>
+        </li>
+        <li>
+            <a tabindex="7" href="index.html">Главная</a>
+        </li>
+        <li>
+            <a href="#top">Обо мне</a>
+        </li>
+    </ul>
+    <!-- КОНЕЦ МЕНЮ -->
 
-    
+    <div class="main">
         <div class="content">
             <h1 class="h1">Навыки</h1>
             <h2 class="h2">Мои навыки, умения, способности</h2>

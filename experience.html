@@ -6,6 +6,9 @@
     <meta http-equiv="content-type" content="text/html">
     <title>Резюме технического писателя. Владимир Маркиев</title>
 
+    <!-- Preload fonts -->
+    <link rel="preload" href="style_fonts.css" as="style">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="style_main.css">
     <link rel="stylesheet" href="style_nav.css">
@@ -55,10 +58,11 @@
     </script>
 
 </head>
+
 <a name="top"></a>
 
 <body>
-   <!-- МЕНЮ -->
+    <!-- МЕНЮ -->
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0);" class="closebtn" onclick="closeNav()">X</a>
         <a tabindex="1" href="index.html">Главная</a>
@@ -68,21 +72,22 @@
         <a tabindex="5" href="skills.html">Желаемая должность</a>
         <a tabindex="6" href="cases.html">Портфолио</a>
     </div>
-
-    <div class="main">
-        <div class="header">
-            <nav>
-                <ul class="breadcrumb">
-                <!-- КНОПКА МЕНЮ -->
-                    <li>
-                         <button class="openbtn" onclick="openNav()">Открыть меню</button>
-                    </li>
-                <!-- КОНЕЦ МЕНЮ -->
-                    <li><a tabindex="7" href="index.html">Главная</a></li>
-                    <li>Опыт работы</li>
-                </ul>
-            </nav>
-        </div>
+ 
+    <ul class="breadcrumb">
+        <li>
+            <!-- КНОПКА МЕНЮ -->
+            <button class="openbtn" onclick="openNav()">Открыть меню</button>
+         </li>
+        <li>
+            <a tabindex="7" href="index.html">Главная</a>
+        </li>
+        <li>
+            <a href="#top">Опыт работы</a>
+        </li>
+    </ul>
+       
+       <!-- Тот самый stub-->
+            
         <div class="stub" id="stub">
             <div class="pagenav">
                 <a href="#now">
@@ -148,11 +153,13 @@
                         </tr>
                     </table>
                 </a>
-            </div><a tabindex="8" id="stublink" href=#>Меню страницы</a>
+            </div>
+            <a tabindex="8" id="stublink" href=#>Меню страницы</a>
         </div>
-        <div class="content first"><h1 class="h1">Моё резюме</h1></div>
+    <div class="main">
         <a tabindex="-1" name="now"></a>
-        <div class="content second">
+        <div class="content">
+            <h1 class="h1">Моё резюме</h1>
             <h2 class="h2">Фриланс, не только переводы.</h2>
             <div class="subheadline">С 1 апреля 2020</div>
             <p>Я закончил работать в ЭРОСТ Груп ровно в первую неделю выходных дней с сохранением зарплаты и к этому времени у меня уже было предложение о работе.

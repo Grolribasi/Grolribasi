@@ -6,6 +6,9 @@
     <meta http-equiv="content-type" content="text/html">
     <title>Портфолио. Владимир Маркиев</title>
 
+    <!-- Preload fonts -->
+    <link rel="preload" href="style_fonts.css" as="style">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="style_main.css">
     <link rel="stylesheet" href="style_nav.css">
@@ -27,7 +30,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Markiev Vladimir">
    
-   <!-- Favicons -->
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -40,47 +43,44 @@
     <!-- Favicons -->
 
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" src="js_metrika.js">
+    <script src="js_metrika.js">
     </script>
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/62734534" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
 
-    <script type="text/javascript" src="js_nav.js">
+    <script src="js_nav.js">
     </script>
 </head>
+
 <a name="top"></a>
 
 <body>
     <!-- МЕНЮ -->
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0);" class="closebtn" onclick="closeNav()">X</a>
-       
-            <a tabindex="1" href="index.html">Главная</a>
-            <a tabindex="2" href="about.html">Обо мне</a>
-            <a tabindex="3" href="education.html">Образование</a>
-            <a tabindex="4" href="experience.html">Резюме</a>
-            <a tabindex="5" href="skills.html">Желаемая должность</a>
-            <a tabindex="6" class="current" href="#top">Портфолио</a>
+        <a tabindex="1" href="index.html">Главная</a>
+        <a tabindex="2" href="about.html">Обо мне</a>
+        <a tabindex="3" href="education.html">Образование</a>
+        <a tabindex="4" href="experience.html">Резюме</a>
+        <a tabindex="5" href="skills.html">Желаемая должность</a>
+        <a tabindex="6" class="current" href="#top">Портфолио</a>
     </div>
 
+    <ul class="breadcrumb">
+        <li>
+            <!-- КНОПКА МЕНЮ -->
+            <button class="openbtn" onclick="openNav()">Открыть меню</button>
+        </li>
+        <li><a tabindex="7" href="index.html">Главная</a></li>
+        <li>Портфолио</li>
+    </ul>
+    <!-- КОНЕЦ МЕНЮ -->
+
     <div class="main">
-        <div class="header">
-            <nav>
-                <ul class="breadcrumb">
-                <!-- КНОПКА МЕНЮ -->
-                    <li>
-        <button class="openbtn" onclick="openNav()">Открыть меню</button>
-                    </li>
-                <!-- КОНЕЦ МЕНЮ -->
-                    <li><a tabindex="7" href="index.html">Главная</a></li>
-                    <li>Портфолио</li>
-                </ul>
-            </nav>
-        </div>
-        <div class="content first"><h1 class="h1">Портфолио работ и сертификаты</h1></div>
-        <div class="content cases second">
+        <div class="content cases">
+            <h1 class="h1">Портфолио работ и сертификаты</h1>
             <h2 class="h2">Примеры моих работ</h2>
             <div class="pp-case case-padding"><embed src="img/Privacy_policy.pdf" width="100%" alt="Политика конфиденциальности" id="pp" /><a href="img/Privacy_policy.pdf" width="100%" class="hidden" target="_blank">Политика конфиденциальности браузера.pdf</a>
                 <p class="casedescription">Случай, когда я писал политику конфиденциальности для одного браузера. Написание таких текстов для меня было новым опытом. Я проанализировал аналогичные документы, правила написания политики конфиденциальности, изучил тон, сумел подвести политику конфиденциальности под данный браузер. Опыт интересный, я всегда готов взяться за похожие документы, например, EULA, Terms and Conditions.</p>
