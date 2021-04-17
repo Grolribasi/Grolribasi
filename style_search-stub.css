@@ -75,62 +75,13 @@ td.two {
     opacity: 1;
 }
 
-ul.skills,
-.subskills,
-.in-content-ul {
+ul.list {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-indent: 0;
-    list-style-position: inside;
+    margin-left: 20px;
 }
-
-.in-content-ol {
-    margin: 0;
-    padding-left: 20px;
-    text-indent: 0;
-    list-style-position: inside;
+ul.list li:before {
+    content:'— ';
 }
-
-.in-content-ul ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-indent: 0;
-    list-style-position: inside;
-}
-
-ul.skills li {
-    padding-left: 20px;
-    margin-left: 0px;
-    list-style-image: url("data:image/svg+xml,%3Csvg width='1.2em' height='1.2em' viewBox='0 0 16 16' fill='rgb(255, 115, 0)' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M16 8A8 8 0 110 8a8 8 0 0116 0zM8.5 4a.5.5 0 00-1 0v3.5H4a.5.5 0 000 1h3.5V12a.5.5 0 001 0V8.5H12a.5.5 0 000-1H8.5V4z' clip-rule='evenodd'/%3E%3C/svg%3E");
-}
-
-ul.skills li:hover {
-    list-style-image: url("data:image/svg+xml,%3Csvg width='1.2em' height='1.2em' viewBox='0 0 16 16' fill='rgb(255, 115, 0)' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M8 3.5a.5.5 0 01.5.5v4a.5.5 0 01-.5.5H4a.5.5 0 010-1h3.5V4a.5.5 0 01.5-.5z' clip-rule='evenodd'/%3E%3Cpath fill-rule='evenodd' d='M7.5 8a.5.5 0 01.5-.5h4a.5.5 0 010 1H8.5V12a.5.5 0 01-1 0V8z' clip-rule='evenodd'/%3E%3Cpath fill-rule='evenodd' d='M8 15A7 7 0 108 1a7 7 0 000 14zm0 1A8 8 0 108 0a8 8 0 000 16z' clip-rule='evenodd'/%3E%3C/svg%3E");
-}
-
-ul.skills li ul.subskills li {
-    padding-left: 20px;
-    font-size: 0.8em;
-    line-height: 1.3em;
-    list-style-image: url("data:image/svg+xml,%3Csvg width='1em' height='1em' viewBox='0 0 16 16' fill='rgb(255, 115, 0)' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M8 3.5a.5.5 0 01.5.5v4a.5.5 0 01-.5.5H4a.5.5 0 010-1h3.5V4a.5.5 0 01.5-.5z' clip-rule='evenodd'/%3E%3Cpath fill-rule='evenodd' d='M7.5 8a.5.5 0 01.5-.5h4a.5.5 0 010 1H8.5V12a.5.5 0 01-1 0V8z' clip-rule='evenodd'/%3E%3Cpath fill-rule='evenodd' d='M8 15A7 7 0 108 1a7 7 0 000 14zm0 1A8 8 0 108 0a8 8 0 000 16z' clip-rule='evenodd'/%3E%3C/svg%3E");
-}
-
-ul.skills li ul.subskills li:hover {
-    list-style-image: url("data:image/svg+xml,%3Csvg width='1em' height='1em' viewBox='0 0 16 16' fill='rgb(255, 115, 0)' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M16 8A8 8 0 110 8a8 8 0 0116 0zM8.5 4a.5.5 0 00-1 0v3.5H4a.5.5 0 000 1h3.5V12a.5.5 0 001 0V8.5H12a.5.5 0 000-1H8.5V4z' clip-rule='evenodd'/%3E%3C/svg%3E");
-}
-
-.content .in-content-ul li {
-    padding-left: 20px;
-    list-style-image: url("data:image/svg+xml,%3Csvg width='1em' height='1em' viewBox='0 0 16 16' fill='rgb(255, 115, 0)' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8'/%3E%3C/svg%3E");
-}
-
-.in-content-ul ul li {
-    padding-left: 20px;
-    list-style-image: url("data:image/svg+xml,%3Csvg height='1em' viewBox='0 0 16 16' fill='rgb(255, 115, 0)' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M8 15A7 7 0 108 1a7 7 0 000 14zm0 1A8 8 0 108 0a8 8 0 000 16z' clip-rule='evenodd'/%3E%3C/svg%3E");
-}
-
 
 .explain {
     width: 75%;
