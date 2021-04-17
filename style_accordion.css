@@ -1,5 +1,5 @@
 .accordion {
-    background-color: #F3E0BE;
+    background-color: #F0EAD6;
     color: #2A293E;
     cursor: pointer;
     padding: 18px;
@@ -13,11 +13,6 @@
 
 .active,
 .accordion:hover {
-    background-color: #F0EAD6;
-}
-
-.active,
-.accordion:focus {
     background-color: #F0EAD6;
 }
 
@@ -35,8 +30,10 @@
 
 .panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: #f8f5ec;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    border: 1px solid;
+    border-color: #efefef;
 }
