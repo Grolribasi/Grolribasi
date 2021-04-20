@@ -77,7 +77,8 @@ td.two {
 
 ul.list {
     list-style-type: none;
-    margin-left: 20px;
+    margin-left: 32px;
+    font-size: .8em;
 }
 ul.list li:before {
     content:'— ';
