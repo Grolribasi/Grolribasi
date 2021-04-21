@@ -4,7 +4,6 @@ function openNav() {
 
 function closeNav() {
  	document.getElementById("mySidebar").style.width = "0";
-
 }
 
 var prevScrollpos = window.pageYOffset;

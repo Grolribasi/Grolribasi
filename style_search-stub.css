@@ -80,6 +80,7 @@ ul.list {
     margin-left: 32px;
     font-size: .8em;
 }
+
 ul.list li:before {
     content:'— ';
 }
