@@ -7,13 +7,13 @@
     <title>Портфолио. Владимир Маркиев</title>
 
     <!-- Preload fonts -->
-    <link rel="preload" href="style_fonts.css" as="style">
+    <link rel="preload" href="css/style_fonts.css" as="style">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="style_main.css">
-    <link rel="stylesheet" href="style_nav.css">
-    <link rel="stylesheet" href="style_cases.css">
-    <link rel="stylesheet" href="style_footer.css">
+    <link rel="stylesheet" href="css/style_main.css">
+    <link rel="stylesheet" href="css/style_nav.css">
+    <link rel="stylesheet" href="css/style_cases.css">
+    <link rel="stylesheet" href="css/style_footer.css">
     <!-- Stylesheets -->
     
     <meta name="robots" content="follow, index" />
@@ -43,14 +43,14 @@
     <!-- Favicons -->
 
     <!-- Yandex.Metrika counter -->
-    <script src="js_metrika.js">
+    <script src="js/js_metrika.js">
     </script>
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/62734534" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
 
-    <script src="js_nav.js">
+    <script src="js/js_nav.js" defer>
     </script>
 </head>
 
@@ -59,7 +59,7 @@
 <body>
     <!-- МЕНЮ -->
     <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0);" class="closebtn" onclick="closeNav()">Скрыть</a>
+        <a href="javascript:void(0);" class="closebtn" id="closebtn">Скрыть</a>
         <a tabindex="1" href="index.html">Главная</a>
         <a tabindex="2" href="about.html">Обо мне</a>
         <a tabindex="3" href="education.html">Образование</a>
@@ -71,7 +71,7 @@
     <ul class="breadcrumb" id="breadcrumb">
         <li>
             <!-- КНОПКА МЕНЮ -->
-            <button class="openbtn" onclick="openNav()">Открыть меню</button>
+            <button class="openbtn" id="openbtn">Открыть меню</button>
         </li>
         <li><a tabindex="7" href="index.html">Главная</a></li>
         <li>Портфолио</li>

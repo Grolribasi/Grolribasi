@@ -7,12 +7,12 @@
     <title>Технический писатель - Владимир Маркиев.</title>
 
     <!-- Preload fonts -->
-    <link rel="preload" href="style_fonts.css" as="style">
+    <link rel="preload" href="css/style_fonts.css" as="style">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="style_main.css">
-    <link rel="stylesheet" href="style_nav.css">
-    <link rel="stylesheet" href="style_footer.css">
+    <link rel="stylesheet" href="css/style_main.css">
+    <link rel="stylesheet" href="css/style_nav.css">
+    <link rel="stylesheet" href="css/style_footer.css">
     <!-- Stylesheets -->
 
     <meta name="robots" content="follow, index" />
@@ -42,14 +42,16 @@
     <!-- Favicons -->
 
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" src="js_metrika.js">
+    <script src="js/js_metrika.js">
     </script>
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/62734534" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
 
-    <script src="js_nav.js">
+    <script src="js/js_nav.js" defer>
+    </script>
+    <script src="js/js_modal.js" defer>
     </script>
 </head>
 
@@ -58,7 +60,7 @@
 <body>
     <!-- МЕНЮ -->
     <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0);" class="closebtn" onclick="closeNav()">Скрыть</a>
+        <a href="javascript:void(0);" class="closebtn" id="closebtn">Скрыть</a>
         <a tabindex="1" class="current" href="#top">Главная</a>
         <a tabindex="2" href="about.html">Обо мне</a>
         <a tabindex="3" href="education.html">Образование</a>
@@ -70,7 +72,7 @@
     <ul class="breadcrumb" id="breadcrumb">
         <li>
         <!-- КНОПКА МЕНЮ -->
-            <button class="openbtn" onclick="openNav()">Открыть меню</button>
+            <button class="openbtn" id="openbtn">Открыть меню</button>
         </li>
         <li>
             <a tabindex="7" href="#top">Наверх</a></li>
@@ -87,9 +89,6 @@
             <img class="modal" id="img01">
             <div id="caption"></div>
         </div>
-
-        <script src="js_modal.js">
-        </script>
             <div class="content">
             <h1 class="h1">Владимир Маркиев - Технический писатель из Санкт-Петербурга</h1>
             <h2 class="h2"></h2>
@@ -97,8 +96,7 @@
             <p>Я далеко не сразу стал техническим писателем. Я работал переводчиком, занимался фрилансом, даже работал в сфере ВЭД. Если интересно, можете проследить весь мой профессиональный путь на странице <a href="experience.html">Опыт работы</a>.</p>
             <p>Интересный факт обо мне: я очень люблю истории людей. Истории из жизни простых людей всегда имеют очень много интереснейших деталей. Если вы, как и я, любите читать истории и хотели бы копнуть глубже в мою, можете почитать страницу <a href="education.html">Образование</a>. Там я рассказываю про обучение и любопытные перипетии в моей жизни.</p>
             <p>В то же время я пойму, если вам есть дело только до сухих фактов. На странице <a href="cases.html">Портфолио</a> собраны примеры моих работ. Это самые примечательные примеры, которые я могу предложить, не раскрывая конфиденциальной информации.</p>
-            <p>Наконец, на странице <a href="about.html">Я в соцсетях</a> есть ссылки на мои профили и проекты. Это лучшее место, чтобы узнать обо мне побольше. Профиль в соцсети даёт хорошее представление о человеке. Можно узнать, как он относится к другим, что он любит делать на досуге и т.д. Мне нечего скрывать и нечего стыдиться.</p>
-            <p>В данный момент я не ищу работу, но ведь у каждого уважающего себя человека должен быть сайт, верно?</p>
+            <p>Наконец, на странице <a href="about.html">Я в соцсетях</a> есть ссылки на мои профили и проекты. Это лучшее место, чтобы узнать обо мне побольше. Говорят, профиль в соцсети даёт хорошее представление о человеке. Можно узнать, как он относится к другим, что он любит делать на досуге и т.д.</p>
         </div>
         <div class="footer">
         <p>2020&nbsp;-&nbsp;
