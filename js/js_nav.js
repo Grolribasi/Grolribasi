@@ -20,3 +20,12 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 };
+
+// Не относится к навигации, но хранится здесь. Запрет на перетаскивание телефона и почты.
+
+var noaction = document.getElementsByClassName("noaction");
+
+for (var i = 0; i < noaction.length; i++) {
+    noaction[i].addEventListener('mousedown', function() {
+event.preventDefault ? event.preventDefault() : event.returnValue = false});
+};
