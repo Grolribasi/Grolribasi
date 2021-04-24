@@ -29,7 +29,7 @@ body {
     max-width: 80%;
     text-align: center;
     color: white;
-    background-color: rgb(0 91 142);
+    background-color: rgb(0, 91, 142);
     border-radius: 18px;
     margin: 0 auto;
     margin-top: 8px;
@@ -46,7 +46,7 @@ body {
     max-width: 60%;
     text-align: center;
     color: #fff;
-    background-color: #03a5fc;
+    background-color: rgba(0, 91, 142, .7);
     border-radius: 18px;
     margin: 0 auto;
     margin-top: 8px;
@@ -128,22 +128,17 @@ body {
 }
 
 /* ОСНОВНЫЕ ССЫЛКИ */
-.content a {
-    color: #0262d5;
+.content a, .footer a {
+    color: rgba(0, 91, 142, .7);
     font-weight: 700;
 }
 
-.content a:visited {
-    color: #024597;
+.content a:hover, .footer a:hover {
     text-decoration: none;
+    color: rgb(0, 91, 142);
 }
 
-.content a:hover {
-    text-decoration: none;
-    color: #358ffd;
-}
-
-.content a:active {
+.content a:active, .footer a:active {
     color: #0262d5;
     text-decoration: underline;
 }
