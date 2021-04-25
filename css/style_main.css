@@ -174,55 +174,6 @@ body {
     padding-bottom: 0;
 }
 
-/* exp-link - ссылки в заголовках на странице опыта */
-
-a.exp-link {
-    color: #fff;
-    font-weight: 700;
-}
-
-a.exp-link:visited {
-    color: #92A8D1;
-    text-decoration: none;
-}
-
-a.exp-link:hover {
-    text-decoration: none;
-    color: #F3E0BE;
-}
-
-a.exp-link:active {
-    color: #DFCFBE;
-    text-decoration: underline;
-}
-
-/* PAGETOP */
-.pagetop {
-    position: fixed;
-    bottom: 0.6em;
-    right: 0.6em;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #ff4000;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 20px;
-    padding: 0.4em;
-    font-size: 1.2em;
-    text-align: center;
-}
-
-.pagetop:hover {
-    background-color: #ff8000;
-    transition: .2s linear;
-}
-
-.pagetop:focus {
-    background-color: #ff8000;
-    transition: .2s linear;
-}
-
 /* MY PHOTO */
 
 #myself {
