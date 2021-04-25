@@ -1,5 +1,5 @@
 .cases a.source {
-        display: block;
+    display: table-row;
     }
 
 .cases a.source:before {
@@ -11,43 +11,6 @@
     content: url("data:image/svg+xml,%3Csvg width='2em' height='2em' viewBox='0 0 16 16' fill='rgb(244, 67, 54, .7)' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z' clip-rule='evenodd'/%3E%3Cpath fill-rule='evenodd' d='M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z' clip-rule='evenodd'/%3E%3C/svg%3E");
 }
 
-
-#pp,
-#rdp,
-#cloud,
-#time,
-#virus,
-#LVM {
-    opacity: 0.7;
-}
-
-#pp:hover,
-#rdp:hover,
-#cloud:hover,
-#time:hover,
-#virus:hover,
-#LVM:hover {
-    opacity: 1;
-}
-
-#pp,
-#rdp,
-#cloud,
-#time,
-.case-padding {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.content .casedescription {
-    font-size: 1.2em;
-    line-height: normal;
-    text-align: justify;
-    text-indent: 0;
-    margin: 0 auto;
-    padding-bottom: 20px;
-}
-
 .content a.cert {
     display: block;
 }
@@ -57,9 +20,14 @@
     margin-top: 0.7em;
 }
 
+.content a.cert {
+    margin-left: 26px;
+}
+
 .content a.cert:before {
     content: url("data:image/svg+xml,%3Csvg width='2em' height='2em' viewBox='0 0 16 16' fill='rgb(244, 67, 54)' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z'/%3E%3Ccircle cx='8' cy='4.5' r='1'/%3E%3C/svg%3E");
     vertical-align: middle;
+    margin-left: -32px;
 }
 
 .content a.cert:hover:before {
@@ -67,52 +35,8 @@
 }
 
 @media only screen and (max-width: 1390px) {
-
-    #pp,
-    #rdp,
-    #virus,
-    #time,
-    #LVM,
-    #cloud {
-        width: 100%;
-        height: 90vh;
-        margin: 0 auto;
-    }
-
-    #myself {
-        max-width: 20%;
-    }
-
     .casedescription {
         font-size: 1.2em;
-    }
-}
-
-@media only screen and (max-width: 1080px) {
-    #pp,
-    #rdp,
-    #virus,
-    #time,
-    #LVM,
-    #cloud {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 670px) {
-
-    #cloud {
-        max-width: 70%;
-        height: 25vh;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-
-    .newjobflex {
-        -webkit-display: block;
-        flex-wrap: nowrap;
-        display: block;
     }
 }
 
@@ -135,14 +59,4 @@
         width: 100%;
     }
 
-}
-
-@media \0screen\,screen\9 {
- #pp,
-    #rdp,
-    #virus,
-    #time,
-    #LVM {
-        display: none;
-    }
 }

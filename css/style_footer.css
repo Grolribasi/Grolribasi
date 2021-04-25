@@ -30,6 +30,11 @@
     transition: .3s;
 }
 
+.git:hover #git {
+    fill: black;
+    transition: .3s;
+}
+
 .vko:hover #vko {
     fill: rgb(76, 117, 163);
     transition: .3s;
@@ -98,6 +103,11 @@
 /* ПОВЕДЕНИЕ ИКОНОК ФУТЕРА ПРИ ФОКУСЕ */
 a.icons-link:focus svg {
     opacity: 1;
+    transition: .3s;
+}
+
+a.icons-link:focus #git {
+    fill: black;
     transition: .3s;
 }
 
