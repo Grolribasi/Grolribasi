@@ -5,13 +5,13 @@
     font-family: 'Noto Serif', serif;
     background-color: rgba(146, 168, 209, .7);
     text-align: center;
-    padding: 1em;
+    padding: 1rem;
 }
 .icons-link {
-    margin-right: 0.5em;
+    margin-right: 0.5rem;
     display: inline-block;
-    width: 2em;
-    height: 2em;
+    width: 2rem;
+    height: 2rem;
 }
 
 #social-icons {
@@ -19,8 +19,8 @@
 }
 
 .icons {
-    width: 2em;
-    height: 2em;
+    width: 2rem;
+    height: 2rem;
     opacity: .5;
     fill: #577284;
 }
@@ -90,7 +90,7 @@
     transition: .3s;
 }
 
-.ema:hover #ema {
+.rema:hover #rema {
     fill: rgb(178, 49, 33);
     transition: .3s;
 }
@@ -156,7 +156,7 @@ a.icons-link:focus #pho {
     transition: .3s;
 }
 
-a.icons-link:focus #ema {
+a.icons-link:focus #rema {
     fill: rgb(178, 49, 33);
     transition: .3s;
 }
