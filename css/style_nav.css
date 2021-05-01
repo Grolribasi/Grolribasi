@@ -119,7 +119,20 @@ ul.breadcrumb li a:active {
 }
 
 .sidebar a.current {
-   background-color: rgb(31, 97, 77); 
+    background-color: rgb(31, 97, 77); 
+}
+
+
+@media only screen and (max-width: 500px) {
+    ul.breadcrumb li {
+        font-size: 18px;
+    }
+    ul.breadcrumb {
+        padding: 8px 14px;
+    }
+    .openbtn {
+        font-size: 18px; 
+    }
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
