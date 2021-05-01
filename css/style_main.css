@@ -35,9 +35,9 @@ body {
     margin-top: 8px;
     margin-bottom: 8px;
     text-transform: uppercase;
-    padding: 12px;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
+    padding: 4px 0px 4px 0px;
+    font-size: 1.8em;
+    line-height: 2.2em;
     font-weight: 700;
 }
 
@@ -52,10 +52,10 @@ body {
     margin-top: 8px;
     margin-bottom: 8px;
     text-transform: uppercase;
-    padding: 0px 8px 0px 8px;
+    padding: 2px 0px 2px 0px;
     font-weight: 700;
-    font-size: 1.6rem;
-    line-height: 2.2rem;
+    font-size: 1.6em;
+    line-height: 2.2em;
 }
 
 /* subheadline - это div. Не h3, потому что не нужна индексация. Не p, чтобы не путался с другими p */
@@ -66,25 +66,24 @@ body {
 
 @media only screen and (max-width: 480px) {
     .h1 {
-        font-size: 1.6rem;
+        font-size: 1.6em;
         max-width: 100%;
     }
 
     .h2 {
-        font-size: 1.4rem;
+        font-size: 1.4em;
         max-width: 100%;
     }
-
 }
 
 @media only screen and (max-width: 400px) {
     .h1 {
-        font-size: 1.4rem;
+        font-size: 1.4em;
         max-width: 100%;
     }
 
     .h2 {
-        font-size: 1.2rem;
+        font-size: 1.2em;
         max-width: 100%;
         width: 100%;
     }
@@ -92,12 +91,12 @@ body {
 
 @media only screen and (max-width: 370px) {
     .h1 {
-        font-size: 1.2rem;
+        font-size: 1.2em;
         max-width: 100%;
     }
 
     .h2 {
-        font-size: 1rem;
+        font-size: 1em;
         max-width: 100%;
         width: 100%;
     }
@@ -111,13 +110,13 @@ body {
     margin: 0 auto;
     margin-top: 8px;
     margin-bottom: 8px;
-    line-height: 2.0rem;
+    line-height: 2.0em;
     background: #fff;
     overflow: hidden;
-    padding: 1rem;
+    padding: 1em;
     text-align: left;
     min-height: 100%;
-    font-size: 1.3rem;
+    font-size: 1.3em;
     border: 1px solid;
     border-color: #efefef;
 }
@@ -145,7 +144,7 @@ body {
 
 @media only screen and (max-width: 1080px) {
     .content {
-        font-size: 1.3rem;
+        font-size: 1.3em;
     }
 }
 
@@ -153,25 +152,10 @@ body {
     .main {
         margin-left: 0;
     }
-}
-
-@media only screen and (max-width: 800px) {
     .content {
         max-width: 95%;
-        font-size: 1.3rem;
+        font-size: 1.3em;
     }
-}
-
-/* СКРЫТЫЕ ССЫЛКИ НА СТРАНИЦЕ ПОРТФОЛИО, оптимизация под IE */
-@media \0screen\,screen\9 {
-    .content a.hidden {
-        display: block;
-    }
-}
-
-/* Последний DIV на странице портфолио не должен иметь паддинг снизу */
-.cases:last-child {
-    padding-bottom: 0;
 }
 
 /* MY PHOTO */
@@ -260,6 +244,7 @@ body {
 a.blocklink {
     display: block;
     margin-left: 10%;
+    margin-bottom: 1.2em;
 }
 
 .blocklink:before {
@@ -280,17 +265,21 @@ ul.list li {
     margin-left: 12px;
 }
 
+ul.list li {
+    padding-bottom: 1.2em;
+}
+
 .cases a.source {
     display: table-cell;
 }
 
 .cases a.source:before {
-    content: url("data:image/svg+xml,%3Csvg width='2rem' height='2rem' viewBox='0 0 16 16' fill='rgb(255, 196, 0)' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z' clip-rule='evenodd'/%3E%3Cpath fill-rule='evenodd' d='M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    content: url("data:image/svg+xml,%3Csvg width='2em' height='2em' viewBox='0 0 16 16' fill='rgb(255, 196, 0)' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z' clip-rule='evenodd'/%3E%3Cpath fill-rule='evenodd' d='M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z' clip-rule='evenodd'/%3E%3C/svg%3E");
     vertical-align: middle;
 }
 
 .cases a.source:hover:before {
-    content: url("data:image/svg+xml,%3Csvg width='2rem' height='2rem' viewBox='0 0 16 16' fill='rgb(255, 196, 0, .7)' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z' clip-rule='evenodd'/%3E%3Cpath fill-rule='evenodd' d='M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    content: url("data:image/svg+xml,%3Csvg width='2em' height='2em' viewBox='0 0 16 16' fill='rgb(255, 196, 0, .7)' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z' clip-rule='evenodd'/%3E%3Cpath fill-rule='evenodd' d='M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z' clip-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 .content a.cert {
@@ -299,7 +288,7 @@ ul.list li {
 
 .cert {
     text-align: left;
-    margin-top: 0.7rem;
+    margin-top: 0.7em;
 }
 
 .content a.cert {
@@ -307,13 +296,13 @@ ul.list li {
 }
 
 .content a.cert:before {
-    content: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' height='2rem' viewBox='0 0 24 24' width='2rem' fill='rgb(255, 196, 0)'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z'/%3E%3C/svg%3E");
+    content: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' height='2em' viewBox='0 0 24 24' width='2em' fill='rgb(255, 196, 0)'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z'/%3E%3C/svg%3E");
     vertical-align: middle;
     margin-left: -32px;
 }
 
 .content a.cert:hover:before {
-    content: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' height='2rem' viewBox='0 0 24 24' width='2rem' fill='rgb(255, 196, 0, .7)'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z'/%3E%3C/svg%3E");
+    content: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' height='2em' viewBox='0 0 24 24' width='2em' fill='rgb(255, 196, 0, .7)'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z'/%3E%3C/svg%3E");
 }
 
 
@@ -324,14 +313,12 @@ ul.list li {
 }
 
 @media only screen and (max-width: 1080px) {
-
     #myself {
         max-width: 25%;
     }
 }
 
 @media only screen and (max-width: 800px) {
-
     #myself {
         max-width: 30%;
     }
@@ -345,7 +332,6 @@ ul.list li {
 }
 
 @media only screen and (max-width: 670px) {
-
     #myself {
         max-width: 35%;
     }
@@ -360,24 +346,5 @@ ul.list li {
 @media only screen and (max-width: 400px) {
     #myself {
         max-width: 50%;
-    }
-}
-
-/* PAGETOP BUTTON */
-
-@media only screen and (max-width: 670px) {
-    .pagetop {
-        bottom: 3rem;
-        right: 1rem;
-        border-radius: 20px;
-        padding: 0.4rem;
-        font-size: 1rem;
-        box-sizing: border-box;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .pagetop {
-        display: none;
     }
 }

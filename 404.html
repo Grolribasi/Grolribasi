@@ -2,113 +2,43 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="style.css">
     <title>Don't panic! </title>
-    <link rel="stylesheet" href="style_main.css">
+    <link rel="stylesheet" href="css/style_main.css">
+    <script src="js/js_404.js" defer>
+    </script>
+    <style>
+        .content {text-align: center;}
+    </style>
 </head>
 
 <body>
     <div class="main">
         <div class="content">
-            <h1 class="h1">Произошла ошибка.</h1><br>
-            <p>Сайт не сломался. Скорей всего вы набрали неверный адрес. Проверьте ещё раз адресную строку. Может быть, вы случайно ввели заглавную букву в адресе?</p>
-            <p>Попробуйте перейти на <a href="index.html">Главную </a> или <a href="javascript:history.back()" title="">Предыдущую страницу</a></p>
-            <p>Надоел сайт? Сыграйте в игру. Я честно позаимствовал её в готовом виде, только текст изменил.</p>
+            <h1 class="h1">Без паники!</h1><br>
+            <p>Сайт не сломался.<p>
+            <p>Скорее всего вы набрали неверный адрес.<p>
+            <p>Проверьте опечатки в адресной строке.<p>
+            <p>Попробуйте перейти на <a href="javascript:history.back()" title="">Предыдущую страницу</a> или на <a href="index.html">Главную</a>.</p>
+    
+        <div class="form content">
         
- 
-    <h2 class="h1">Игра "Угадай номер"</h1>
-
-    <p>Игра выбирает случайный номер от 1 до 100. У вас есть 10 попыток, чтобы угадать его. После каждой попытки игра скажет, если вы назвали число больше или меньше загаданного. Удачи!</p>
-
-    <div class="form">
-      <label for="guessField">Введите число: </label><input type="text" id="guessField" class="guessField">
-      <input type="submit" value="Предложить число" class="guessSubmit">
-    </div>
-
-    <div class="resultParas">
-      <p class="guesses"></p>
-      <p class="lastResult"></p>
-      <p class="lowOrHi"></p>
-    </div>
-
-    <script>
-      let randomNumber = Math.floor(Math.random() * 100) + 1;
-      const guesses = document.querySelector('.guesses');
-      const lastResult = document.querySelector('.lastResult');
-      const lowOrHi = document.querySelector('.lowOrHi');
-      const guessSubmit = document.querySelector('.guessSubmit');
-      const guessField = document.querySelector('.guessField');
-      let guessCount = 1;
-      let resetButton;
-
-      function checkGuess() {
-        let userGuess = Number(guessField.value);
-        if (guessCount === 1) {
-          guesses.textContent = 'Предыдущие попытки: ';
-        }
-
-        guesses.textContent += userGuess + ' ';
-
-        if (userGuess === randomNumber) {
-          lastResult.textContent = 'Ура! Вы угадали!';
-          lastResult.style.backgroundColor = 'green';
-          lowOrHi.textContent = '';
-          setGameOver();
-        } else if (guessCount === 10) {
-          lastResult.textContent = 'GAME OVER :(';
-          lowOrHi.textContent = '';
-          setGameOver();
-        } else {
-          lastResult.textContent = 'Неверно!';
-          lastResult.style.backgroundColor = 'red';
-          if(userGuess < randomNumber) {
-            lowOrHi.textContent = 'Предложенное число слишком маленькое.' ;
-          } else if(userGuess > randomNumber) {
-            lowOrHi.textContent = 'Предложенное число слишком большое.';
-          }
-        }
-
-        guessCount++;
-        guessField.value = '';
-        guessField.focus();
-      }
-
-      guessSubmit.addEventListener('click', checkGuess);
-
-      function setGameOver() {
-        guessField.disabled = true;
-        guessSubmit.disabled = true;
-        resetButton = document.createElement('button');
-        resetButton.textContent = 'Ещё разок?';
-        document.getElementsByClassName("content")[0].appendChild(resetButton);
-        resetButton.addEventListener('click', resetGame);
-      }
-
-      function resetGame() {
-        guessCount = 1;
-        const resetParas = document.querySelectorAll('.resultParas p');
-        for(let i = 0 ; i < resetParas.length ; i++) {
-          resetParas[i].textContent = '';
-        }
-
-        resetButton.parentNode.removeChild(resetButton);
-        guessField.disabled = false;
-        guessSubmit.disabled = false;
-        guessField.value = '';
-        guessField.focus();
-        lastResult.style.backgroundColor = 'white'; //НУЖЕН ЦВЕТ!
-        randomNumber = Math.floor(Math.random() * 100) + 1;
-      }
-    </script>
-    </div>
+        <label for="guessField"></label><input placeholder="Введите число" type="number" id="guessField" class="guessField">
+        <input type="submit" value="Нажми меня" class="guessSubmit">
+        <div class="resultParas">
+            <p class="guesses"></p>
+            <p class="lastResult"></p>
+            <p class="lowOrHi"></p>
+        </div>
+        </div>
  </div>
-</body></html>
+</body>
+</html>
